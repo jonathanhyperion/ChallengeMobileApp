@@ -15,6 +15,10 @@
 		AE4CD6192AF4ACEE001246BF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD61B2AF4ACEE001246BF /* Localizable.strings */; };
 		AE9080F22AF48C64008EABC4 /* AuthNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F12AF48C64008EABC4 /* AuthNetworkService.swift */; };
 		AE9080F92AF49118008EABC4 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F82AF49118008EABC4 /* L10n.swift */; };
+		AEAFFDF82AF4D25600E7B5D0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */; };
+		AEAFFDFA2AF4E9D400E7B5D0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */; };
+		AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */; };
+		AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */; };
 		AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599292AF47F720099DDE9 /* Injector.swift */; };
 		AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */; };
 		AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992D2AF47FDE0099DDE9 /* K.swift */; };
@@ -58,6 +62,10 @@
 		AE4CD61A2AF4ACEE001246BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE9080F12AF48C64008EABC4 /* AuthNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkService.swift; sourceTree = "<group>"; };
 		AE9080F82AF49118008EABC4 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AEC599292AF47F720099DDE9 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		AEC5992D2AF47FDE0099DDE9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
@@ -146,6 +154,8 @@
 		AE9080F42AF48F97008EABC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */,
+				AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -213,6 +223,8 @@
 		AEC599252AF47EE30099DDE9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */,
+				AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -505,13 +517,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC599322AF480860099DDE9 /* HomeView.swift in Sources */,
+				AEAFFDFA2AF4E9D400E7B5D0 /* Fonts.swift in Sources */,
 				AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */,
 				AE9080F22AF48C64008EABC4 /* AuthNetworkService.swift in Sources */,
 				AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */,
 				AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */,
 				AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */,
+				AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */,
+				AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */,
 				AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */,
 				AE2CF3332AF487530095C63B /* Moya+Publisher.swift in Sources */,
+				AEAFFDF82AF4D25600E7B5D0 /* Assets.swift in Sources */,
 				AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */,
 				AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */,
 				AE9080F92AF49118008EABC4 /* L10n.swift in Sources */,

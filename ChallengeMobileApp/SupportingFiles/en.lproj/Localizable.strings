@@ -2,3 +2,10 @@
   Localizable.strings
   ChallengeMobileApp
 */
+
+// MARK: Login
+
+"email" = "Email";
+"password" = "Password";
+"forgotPassword" = "Forgot?";
+"login" = "Log in";
