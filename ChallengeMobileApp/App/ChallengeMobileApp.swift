@@ -6,10 +6,10 @@
 import SwiftUI
 
 @main
-struct ChallengeMobileAppApp: App {
+struct ChallengeMobileApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LoginView()
         }
     }
 }
