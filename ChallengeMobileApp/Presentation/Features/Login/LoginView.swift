@@ -84,6 +84,7 @@ struct LoginView: View {
             }
             
         }
+        .navigationBarHidden(true)
         .ignoresSafeArea()
         .onChange(of: viewModel.validCredentials, perform: { navigate in
             if navigate {

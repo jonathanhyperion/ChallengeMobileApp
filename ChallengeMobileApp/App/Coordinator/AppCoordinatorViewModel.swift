@@ -8,16 +8,17 @@ import FlowStacks
 
 class AppCoordinatorViewModel: ObservableObject {
     @Published var routes: Routes<Screen>
-    @Published var homeRoutes: Bool = false
     
-    init() {
-        routes = [.root(.login)]
+    init(isUserLoggedUseCase: IsUserLoggedUseCase) {
+        if isUserLoggedUseCase.execute() {
+            routes = [.root(.home)]
+        } else {
+            routes = [.root(.login)]
+        }
     }
     
     func goToHome() {
-        withAnimation(.spring()) {
-            homeRoutes = true
-        }
+        routes.push(.home)
     }
     
     func goToLogin() {
@@ -31,12 +32,6 @@ class AppCoordinatorViewModel: ObservableObject {
 
 extension AppCoordinatorViewModel {
     static func make() -> AppCoordinatorViewModel {
-        AppCoordinatorViewModel()
+        AppCoordinatorViewModel(isUserLoggedUseCase: Injector.resolve(IsUserLoggedUseCase.self))
     }
-}
-
-
-enum Screen {
-    case home
-    case login
 }

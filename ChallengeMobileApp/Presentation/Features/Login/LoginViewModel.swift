@@ -42,7 +42,6 @@ final class LoginViewModel: ObservableObject {
             }
         }, receiveValue: { [weak self] _ in
             self?.validCredentials = true
-            print("\(Storage.shared.getTokenAuth())")
         })
         .store(in: &cancellable)
     }

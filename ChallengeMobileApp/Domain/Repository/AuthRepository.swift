@@ -9,4 +9,5 @@ import Combine
 
 protocol AuthRepository {
     func login(params: LoginRequest) -> AnyPublisher<AccessToken, Error>
+    func isUserLogged() -> Bool
 }

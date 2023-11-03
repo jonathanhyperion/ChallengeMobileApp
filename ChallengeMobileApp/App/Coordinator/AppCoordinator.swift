@@ -21,11 +21,6 @@ struct AppCoordinator: View {
                     }
                 }
             }
-            .onAppear(perform: {
-                if Storage.shared.getTokenAuth().isEmpty {
-                    viewModel.goToLogin()
-                }
-            })
         }
         .navigationViewStyle(.stack)
     }

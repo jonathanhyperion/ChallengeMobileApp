@@ -35,6 +35,8 @@
 		AEE8C0E52AF58C650093964C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E42AF58C650093964C /* AppCoordinator.swift */; };
 		AEE8C0E72AF58D380093964C /* AppCoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */; };
 		AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */; };
+		AEE8C0EB2AF5AF520093964C /* IsUserLoggedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */; };
+		AEE8C0EE2AF5B34E0093964C /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0ED2AF5B34E0093964C /* Screen.swift */; };
 		AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */; };
 		AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7003A2AF45611003BDFCB /* LoginView.swift */; };
 		AEF7003D2AF45614003BDFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF7003C2AF45614003BDFCB /* Assets.xcassets */; };
@@ -94,6 +96,8 @@
 		AEE8C0E42AF58C650093964C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorViewModel.swift; sourceTree = "<group>"; };
 		AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
+		AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsUserLoggedUseCase.swift; sourceTree = "<group>"; };
+		AEE8C0ED2AF5B34E0093964C /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		AEF700352AF45611003BDFCB /* ChallengeMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileApp.swift; sourceTree = "<group>"; };
 		AEF7003A2AF45611003BDFCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -225,11 +229,10 @@
 		AEC5991E2AF47E070099DDE9 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				AEE8C0EC2AF5B3300093964C /* Coordinator */,
 				AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */,
 				AEC599282AF47F530099DDE9 /* Utilities */,
 				AEC599272AF47F4C0099DDE9 /* Extensions */,
-				AEE8C0E42AF58C650093964C /* AppCoordinator.swift */,
-				AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */,
+				AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -373,6 +377,16 @@
 				AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		AEE8C0EC2AF5B3300093964C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */,
+				AEE8C0E42AF58C650093964C /* AppCoordinator.swift */,
+				AEE8C0ED2AF5B34E0093964C /* Screen.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		AEF7002C2AF45611003BDFCB = {
@@ -620,12 +634,14 @@
 				AE5592952AF55917005C4515 /* LoginRequest.swift in Sources */,
 				AEE8C0E22AF5855D0093964C /* AuthRepository.swift in Sources */,
 				AEE8C0D52AF57D860093964C /* NetworkRequestError.swift in Sources */,
+				AEE8C0EB2AF5AF520093964C /* IsUserLoggedUseCase.swift in Sources */,
 				AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */,
 				AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */,
 				AEE8C0DD2AF583880093964C /* Storage.swift in Sources */,
 				AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */,
 				AE9080F22AF48C64008EABC4 /* AuthRepositoryImpl.swift in Sources */,
 				AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */,
+				AEE8C0EE2AF5B34E0093964C /* Screen.swift in Sources */,
 				AEE8C0E72AF58D380093964C /* AppCoordinatorViewModel.swift in Sources */,
 				AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */,
 				AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */,

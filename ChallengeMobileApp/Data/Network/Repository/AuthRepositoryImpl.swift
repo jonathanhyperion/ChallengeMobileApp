@@ -35,4 +35,8 @@ struct AuthRepositoryImpl: AuthRepository {
             }
             .eraseToAnyPublisher()
     }
+    
+    func isUserLogged() -> Bool {
+        !Storage.shared.getTokenAuth().isEmpty
+    }
 }
