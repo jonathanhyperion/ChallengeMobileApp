@@ -57,7 +57,7 @@ struct LoginView: View {
                             
                             Button(
                                 action: {
-                                    
+                                    viewModel.login()
                                 }
                             ) {
                                 VStack(alignment: .center) {
@@ -86,8 +86,8 @@ struct LoginView: View {
         }
         .ignoresSafeArea()
         .onChange(of: viewModel.validCredentials, perform: { navigate in
-            if navigate ?? true {
-                if Storage.shared.getTokenAuth() != "" {
+            if navigate {
+                if !Storage.shared.getTokenAuth().isEmpty {
                     pushHome()
                 }
             }

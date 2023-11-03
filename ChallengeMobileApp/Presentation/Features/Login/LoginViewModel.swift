@@ -9,18 +9,16 @@ import Combine
 final class LoginViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
-    
-    @Published private(set) var validCredentials: Bool?
+    @Published private(set) var validCredentials: Bool = false
     
     private let loginUseCase: LoginUseCase
     private var cancellable = Set<AnyCancellable>()
     
     init(loginUseCase: LoginUseCase) {
         self.loginUseCase = loginUseCase
-        login()
     }
     
-    private func login() {
+    func login() {
         loginUseCase.login(params: LoginRequest(
                 grantType: "password",
                 email: email,
@@ -40,10 +38,11 @@ final class LoginViewModel: ObservableObject {
                     }
                 }
             case .finished:
-                break
+                print("✅ Finish...")
             }
         }, receiveValue: { [weak self] _ in
             self?.validCredentials = true
+            print("\(Storage.shared.getTokenAuth())")
         })
         .store(in: &cancellable)
     }

@@ -32,6 +32,9 @@
 		AEE8C0D92AF57F1C0093964C /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */; };
 		AEE8C0DD2AF583880093964C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0DC2AF583880093964C /* Storage.swift */; };
 		AEE8C0E22AF5855D0093964C /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E12AF5855D0093964C /* AuthRepository.swift */; };
+		AEE8C0E52AF58C650093964C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E42AF58C650093964C /* AppCoordinator.swift */; };
+		AEE8C0E72AF58D380093964C /* AppCoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */; };
+		AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */; };
 		AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */; };
 		AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7003A2AF45611003BDFCB /* LoginView.swift */; };
 		AEF7003D2AF45614003BDFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF7003C2AF45614003BDFCB /* Assets.xcassets */; };
@@ -88,6 +91,9 @@
 		AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
 		AEE8C0DC2AF583880093964C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 		AEE8C0E12AF5855D0093964C /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		AEE8C0E42AF58C650093964C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorViewModel.swift; sourceTree = "<group>"; };
+		AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
 		AEF700352AF45611003BDFCB /* ChallengeMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileApp.swift; sourceTree = "<group>"; };
 		AEF7003A2AF45611003BDFCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -222,6 +228,8 @@
 				AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */,
 				AEC599282AF47F530099DDE9 /* Utilities */,
 				AEC599272AF47F4C0099DDE9 /* Extensions */,
+				AEE8C0E42AF58C650093964C /* AppCoordinator.swift */,
+				AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -231,6 +239,7 @@
 			children = (
 				AEC599292AF47F720099DDE9 /* Injector.swift */,
 				AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */,
+				AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -607,14 +616,17 @@
 			files = (
 				AEC599322AF480860099DDE9 /* HomeView.swift in Sources */,
 				AEAFFDFA2AF4E9D400E7B5D0 /* Fonts.swift in Sources */,
+				AEE8C0E52AF58C650093964C /* AppCoordinator.swift in Sources */,
 				AE5592952AF55917005C4515 /* LoginRequest.swift in Sources */,
 				AEE8C0E22AF5855D0093964C /* AuthRepository.swift in Sources */,
 				AEE8C0D52AF57D860093964C /* NetworkRequestError.swift in Sources */,
 				AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */,
+				AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */,
 				AEE8C0DD2AF583880093964C /* Storage.swift in Sources */,
 				AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */,
 				AE9080F22AF48C64008EABC4 /* AuthRepositoryImpl.swift in Sources */,
 				AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */,
+				AEE8C0E72AF58D380093964C /* AppCoordinatorViewModel.swift in Sources */,
 				AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */,
 				AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */,
 				AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */,
