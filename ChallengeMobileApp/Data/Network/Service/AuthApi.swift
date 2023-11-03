@@ -7,7 +7,7 @@ import Moya
 import Foundation
 
 enum AuthApi {
-    case auth
+    case login(params: LoginRequest)
 }
 
 extension AuthApi: TargetType {
@@ -20,19 +20,19 @@ extension AuthApi: TargetType {
     
     var path: String {
         switch self {
-        case .auth:
-            return "/"
+        case .login:
+            return "/oauth/token"
         }
     }
     
     var method: Moya.Method {
-        return .get
+        return .post
     }
 
     var task: Task {
         switch self {
-        case .auth:
-            return .requestPlain
+        case let .login(params):
+            return .requestCustomJSONEncodable(params, encoder: JSONEncoder())
         }
     }
     

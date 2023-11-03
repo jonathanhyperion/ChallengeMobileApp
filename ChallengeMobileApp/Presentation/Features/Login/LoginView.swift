@@ -6,9 +6,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var email: String = ""
-    @State var password: String = ""
+    @StateObject var viewModel: LoginViewModel = .make()
     @State private var keyboardHeight: CGFloat = 0.0
+    let pushHome: () -> Void
     
     var body: some View {
         GeometryReader { reader in
@@ -30,7 +30,7 @@ struct LoginView: View {
                         VStack(spacing: 28.0) {
                             
                             CustomTextField(
-                                text: $email,
+                                text: $viewModel.email,
                                 placeholder: L10n.email,
                                 backgroundColor: .white,
                                 foregroundColor: .black,
@@ -43,7 +43,7 @@ struct LoginView: View {
                             )
                             
                             CustomTextField(
-                                text: $password,
+                                text: $viewModel.password,
                                 placeholder: L10n.password,
                                 backgroundColor: .white,
                                 foregroundColor: .black,
@@ -85,6 +85,13 @@ struct LoginView: View {
             
         }
         .ignoresSafeArea()
+        .onChange(of: viewModel.validCredentials, perform: { navigate in
+            if navigate ?? true {
+                if Storage.shared.getTokenAuth() != "" {
+                    pushHome()
+                }
+            }
+        })
     }
 }
 
@@ -137,6 +144,6 @@ struct LoginBackground: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(pushHome: {})
     }
 }
