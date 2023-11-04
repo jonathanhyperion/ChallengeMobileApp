@@ -10,6 +10,7 @@ import Foundation
 enum AuthApi {
     case login(params: LoginRequest)
     case refreshToken(params: RefreshTokenRequest)
+    case logout(params: LogoutRequest)
 }
 
 extension AuthApi: TargetType {
@@ -26,6 +27,8 @@ extension AuthApi: TargetType {
             return "/oauth/token"
         case .refreshToken:
             return "/oauth/token"
+        case .logout:
+            return "/oauth/revoke"
         }
     }
     
@@ -35,6 +38,8 @@ extension AuthApi: TargetType {
             return .post
         case .refreshToken:
             return .post
+        case .logout:
+            return .post
         }
     }
 
@@ -43,6 +48,8 @@ extension AuthApi: TargetType {
         case let .login(params):
             return .requestCustomJSONEncodable(params, encoder: JSONEncoder())
         case let .refreshToken(params):
+            return .requestCustomJSONEncodable(params, encoder: JSONEncoder())
+        case let .logout(params):
             return .requestCustomJSONEncodable(params, encoder: JSONEncoder())
         }
     }
@@ -90,6 +97,8 @@ extension AuthApi: TargetType {
                 }
             }
             """.dataEncoded
+        case .logout:
+            data = "OK".dataEncoded
         }
         return data
     }

@@ -68,4 +68,14 @@ struct AuthRepositoryImpl: AuthRepository {
             }
             .eraseToAnyPublisher()
     }
+    
+    func logout(params: LogoutRequest) -> AnyPublisher<LogoutResponse, Error> {
+        api.requestPublisher(.logout(params: params))
+            .map(\.data)
+            .decode(type: LogoutResponse.self, decoder: JSONDecoder())
+            .tryMap { response in
+                return response
+            }
+            .eraseToAnyPublisher()
+    }
 }
