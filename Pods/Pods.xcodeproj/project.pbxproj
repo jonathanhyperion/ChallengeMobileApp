@@ -561,7 +561,7 @@
 		36DFDA77DF0620F82B3EA263A5690DEF /* SerialDispatchQueueScheduler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SerialDispatchQueueScheduler.swift; path = RxSwift/Schedulers/SerialDispatchQueueScheduler.swift; sourceTree = "<group>"; };
 		36F82A591428E782243609C79DA4152D /* ReactiveSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReactiveSwift-umbrella.h"; sourceTree = "<group>"; };
 		373B5F6AA7E969DFD971084B2FA44CE4 /* Swinject-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Swinject-umbrella.h"; sourceTree = "<group>"; };
-		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Moya; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		37725EE8615AE8B1E88E96B74C196F61 /* Platform.Darwin.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Platform.Darwin.swift; path = Platform/Platform.Darwin.swift; sourceTree = "<group>"; };
 		3B0504758EEAD1825EFB68B65B62547D /* CombineLatest+Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CombineLatest+Collection.swift"; path = "RxSwift/Observables/CombineLatest+Collection.swift"; sourceTree = "<group>"; };
 		3C1E9CF42CF9BCB77BF8786EDDC32DFF /* Lock.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Lock.swift; path = RxSwift/Concurrency/Lock.swift; sourceTree = "<group>"; };
@@ -681,7 +681,7 @@
 		83D8ED9AEF1B281409AD2C10CFC14405 /* StringEncoding+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "StringEncoding+Alamofire.swift"; path = "Source/StringEncoding+Alamofire.swift"; sourceTree = "<group>"; };
 		842941EB94D0A8F2EE64D2FDC5E099B3 /* SwinjectAutoregistration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwinjectAutoregistration.release.xcconfig; sourceTree = "<group>"; };
 		852683727DBF40D35C6C1EEBF2E0E85A /* Never.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Never.swift; path = RxSwift/Observables/Never.swift; sourceTree = "<group>"; };
-		85827D592A4D8B100C65A55AD2E32724 /* FlowStacks */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlowStacks; path = FlowStacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85827D592A4D8B100C65A55AD2E32724 /* FlowStacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlowStacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D1A267030F7DC4D8E1F6E8098EFD17 /* Moya.default-Combine-ReactiveSwift-RxSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Moya.default-Combine-ReactiveSwift-RxSwift-prefix.pch"; path = "../Moya.default-Combine-ReactiveSwift-RxSwift/Moya.default-Combine-ReactiveSwift-RxSwift-prefix.pch"; sourceTree = "<group>"; };
 		87FF0F49F44AA5A03955FF795B4A16B6 /* Moya.default-Combine-ReactiveSwift-RxSwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Moya.default-Combine-ReactiveSwift-RxSwift"; path = Moya.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		889F792DEF87640DA0228E7DC33FD404 /* Pods-ChallengeMobileApp.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ChallengeMobileApp.modulemap"; sourceTree = "<group>"; };
@@ -718,7 +718,7 @@
 		9CA76C350D8F738BCA784241C02B62FD /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = RxSwift/Observables/Buffer.swift; sourceTree = "<group>"; };
 		9D65C7BDFFD6314CB29C2A710BD931C2 /* StartWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StartWith.swift; path = RxSwift/Observables/StartWith.swift; sourceTree = "<group>"; };
 		9D846F7047A3888B52D92A7BB1B0463F /* InfiniteSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InfiniteSequence.swift; path = Platform/DataStructures/InfiniteSequence.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9E7EC71472135BF53FDA8724491A21B9 /* Moya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Moya.debug.xcconfig; sourceTree = "<group>"; };
 		9F2183D3A0A59282AEF6ABB01CF044F7 /* RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RxSwift.debug.xcconfig; sourceTree = "<group>"; };
 		A00160C8CBF66123C7B130C0F0EE2271 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = RxSwift/Observables/Optional.swift; sourceTree = "<group>"; };
@@ -765,7 +765,7 @@
 		B2BABE77E939DB38A3EB13B5C7E40DCC /* Moya.default-Combine-ReactiveSwift-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Moya.default-Combine-ReactiveSwift-RxSwift.debug.xcconfig"; path = "../Moya.default-Combine-ReactiveSwift-RxSwift/Moya.default-Combine-ReactiveSwift-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B2E0F692AB19263330D621FDF92DBE87 /* Swinject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Swinject.debug.xcconfig; sourceTree = "<group>"; };
 		B333FB59867D6E62ECFA148C17754DA6 /* ReplaySubject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReplaySubject.swift; path = RxSwift/Subjects/ReplaySubject.swift; sourceTree = "<group>"; };
-		B34FB1EB356A3611DF2D9D61E42CBB61 /* Pods-ChallengeMobileApp */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-ChallengeMobileApp"; path = Pods_ChallengeMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B34FB1EB356A3611DF2D9D61E42CBB61 /* Pods_ChallengeMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B402EDADD7F4845F25AA7B21C53B2BF9 /* Container.TypeForwarding.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Container.TypeForwarding.swift; path = Sources/Container.TypeForwarding.swift; sourceTree = "<group>"; };
 		B53080B796EEA8D734B55CEB2799B16E /* Pods-ChallengeMobileApp-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ChallengeMobileApp-dummy.m"; sourceTree = "<group>"; };
 		B56C3DACC4750ACD5E40F9B13AF155AE /* GroupedObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GroupedObservable.swift; path = RxSwift/GroupedObservable.swift; sourceTree = "<group>"; };
@@ -1072,7 +1072,6 @@
 				407828A2FD723FB2AF77F787DE9D6DEC /* Validation.swift */,
 				771B87B045CB7F8ACC7D64E703E8C043 /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1090,10 +1089,10 @@
 			isa = PBXGroup;
 			children = (
 				5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */,
-				85827D592A4D8B100C65A55AD2E32724 /* FlowStacks */,
-				3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */,
+				85827D592A4D8B100C65A55AD2E32724 /* FlowStacks.framework */,
+				3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya.framework */,
 				87FF0F49F44AA5A03955FF795B4A16B6 /* Moya.default-Combine-ReactiveSwift-RxSwift */,
-				B34FB1EB356A3611DF2D9D61E42CBB61 /* Pods-ChallengeMobileApp */,
+				B34FB1EB356A3611DF2D9D61E42CBB61 /* Pods_ChallengeMobileApp.framework */,
 				B1C76E617C6F397E2F5DB0E49A38D144 /* Pods-ChallengeMobileAppTests */,
 				F87D9465992CEA630BE417FC7868C484 /* ReactiveSwift */,
 				809C5FAB588354C9BA37DC3EAB8CB45C /* RxSwift */,
@@ -1189,7 +1188,6 @@
 				485CF0F201FC89250BE232D860004253 /* TypeParser.swift */,
 				9836CCA10D2861C07A6901C950B87289 /* Support Files */,
 			);
-			name = SwinjectAutoregistration;
 			path = SwinjectAutoregistration;
 			sourceTree = "<group>";
 		};
@@ -1297,7 +1295,6 @@
 				57A7070A2CC1A2009582380048EB491E /* UnavailableItems.swift */,
 				E8015A3B0CDDC39FDA44B4512C4BA936 /* Support Files */,
 			);
-			name = Swinject;
 			path = Swinject;
 			sourceTree = "<group>";
 		};
@@ -1468,7 +1465,6 @@
 				A1C7D4C0283D5B720769A5126A388225 /* Zip+Collection.swift */,
 				108B3B8BDE3FA65C1CB0FD98B8875A4E /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -1520,7 +1516,6 @@
 				6AD35A8506D0CD50DA53B4D2CC2EE577 /* ValidatingProperty.swift */,
 				EC376D4D99F7C5E35BF0FA12FCDEABEA /* Support Files */,
 			);
-			name = ReactiveSwift;
 			path = ReactiveSwift;
 			sourceTree = "<group>";
 		};
@@ -1540,7 +1535,6 @@
 				810043DF0436FF3577F8C37B68D8EFD4 /* View+showing.swift */,
 				F37AE4582809C4CC42F81F2360CD9B6A /* Support Files */,
 			);
-			name = FlowStacks;
 			path = FlowStacks;
 			sourceTree = "<group>";
 		};
@@ -1583,7 +1577,6 @@
 				2076601B47974495752EDCC1369606B3 /* RxSwift */,
 				0D44782C48BF1BCD709D6C3DF20AD372 /* Support Files */,
 			);
-			name = Moya;
 			path = Moya;
 			sourceTree = "<group>";
 		};
@@ -1724,7 +1717,7 @@
 			);
 			name = Moya;
 			productName = Moya;
-			productReference = 3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya */;
+			productReference = 3756A9BBE41ABEE8DCBF5BCA6972C4DA /* Moya.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		3057E291093EA4CA29F959C95AD1E3D5 /* SwinjectAutoregistration */ = {
@@ -1786,7 +1779,7 @@
 			);
 			name = "Pods-ChallengeMobileApp";
 			productName = Pods_ChallengeMobileApp;
-			productReference = B34FB1EB356A3611DF2D9D61E42CBB61 /* Pods-ChallengeMobileApp */;
+			productReference = B34FB1EB356A3611DF2D9D61E42CBB61 /* Pods_ChallengeMobileApp.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		92DC611094C8DA5F30AA92B91566C7F5 /* Pods-ChallengeMobileAppTests */ = {
@@ -1845,7 +1838,7 @@
 			);
 			name = FlowStacks;
 			productName = FlowStacks;
-			productReference = 85827D592A4D8B100C65A55AD2E32724 /* FlowStacks */;
+			productReference = 85827D592A4D8B100C65A55AD2E32724 /* FlowStacks.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EA9EA43B3B503823EE36C60D9C8A865F /* RxSwift */ = {

@@ -28,6 +28,12 @@
 		AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599332AF480970099DDE9 /* LoginViewModel.swift */; };
 		AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */; };
 		AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599372AF483E20099DDE9 /* AuthApi.swift */; };
+		AEE2BB182AF6042C00C29D4D /* RefreshTokenUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */; };
+		AEE2BB1A2AF606E100C29D4D /* RefreshTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */; };
+		AEE2BB1C2AF6079700C29D4D /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */; };
+		AEE2BB1E2AF6086700C29D4D /* String+DataEncoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB1D2AF6086700C29D4D /* String+DataEncoded.swift */; };
+		AEE2BB202AF6389900C29D4D /* Date+ToString.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB1F2AF6389900C29D4D /* Date+ToString.swift */; };
+		AEE2BB222AF638C400C29D4D /* String+ToDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB212AF638C400C29D4D /* String+ToDate.swift */; };
 		AEE8C0D32AF57D6E0093964C /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0D22AF57D6E0093964C /* NetworkErrors.swift */; };
 		AEE8C0D52AF57D860093964C /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0D42AF57D860093964C /* NetworkRequestError.swift */; };
 		AEE8C0D92AF57F1C0093964C /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */; };
@@ -90,6 +96,12 @@
 		AEC599332AF480970099DDE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		AEC599372AF483E20099DDE9 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
+		AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenUseCase.swift; sourceTree = "<group>"; };
+		AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenRequest.swift; sourceTree = "<group>"; };
+		AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
+		AEE2BB1D2AF6086700C29D4D /* String+DataEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DataEncoded.swift"; sourceTree = "<group>"; };
+		AEE2BB1F2AF6389900C29D4D /* Date+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToString.swift"; sourceTree = "<group>"; };
+		AEE2BB212AF638C400C29D4D /* String+ToDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ToDate.swift"; sourceTree = "<group>"; };
 		AEE8C0D22AF57D6E0093964C /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
 		AEE8C0D42AF57D860093964C /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
 		AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
@@ -171,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5592912AF558BE005C4515 /* LoginResponse.swift */,
+				AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -179,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				AE5592942AF55917005C4515 /* LoginRequest.swift */,
+				AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -290,6 +304,9 @@
 			isa = PBXGroup;
 			children = (
 				AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */,
+				AEE2BB1D2AF6086700C29D4D /* String+DataEncoded.swift */,
+				AEE2BB1F2AF6389900C29D4D /* Date+ToString.swift */,
+				AEE2BB212AF638C400C29D4D /* String+ToDate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -342,6 +359,7 @@
 			children = (
 				AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */,
 				AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */,
+				AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -668,12 +686,14 @@
 				AEE8C0E52AF58C650093964C /* AppCoordinator.swift in Sources */,
 				AE5592952AF55917005C4515 /* LoginRequest.swift in Sources */,
 				AEE8C0E22AF5855D0093964C /* AuthRepository.swift in Sources */,
+				AEE2BB182AF6042C00C29D4D /* RefreshTokenUseCase.swift in Sources */,
 				AEE8C0D52AF57D860093964C /* NetworkRequestError.swift in Sources */,
 				AEE8C0EB2AF5AF520093964C /* IsUserLoggedUseCase.swift in Sources */,
 				AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */,
 				AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */,
 				AEE8C0DD2AF583880093964C /* Storage.swift in Sources */,
 				AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */,
+				AEE2BB1E2AF6086700C29D4D /* String+DataEncoded.swift in Sources */,
 				AE9080F22AF48C64008EABC4 /* AuthRepositoryImpl.swift in Sources */,
 				AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */,
 				AEE8C0EE2AF5B34E0093964C /* Screen.swift in Sources */,
@@ -682,10 +702,14 @@
 				AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */,
 				AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */,
 				AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */,
+				AEE2BB222AF638C400C29D4D /* String+ToDate.swift in Sources */,
+				AEE2BB1C2AF6079700C29D4D /* RefreshTokenResponse.swift in Sources */,
 				AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */,
 				AEAFFDF82AF4D25600E7B5D0 /* Assets.swift in Sources */,
 				AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */,
+				AEE2BB1A2AF606E100C29D4D /* RefreshTokenRequest.swift in Sources */,
 				AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */,
+				AEE2BB202AF6389900C29D4D /* Date+ToString.swift in Sources */,
 				AE9080F92AF49118008EABC4 /* L10n.swift in Sources */,
 				AEE8C0D92AF57F1C0093964C /* LoginUseCase.swift in Sources */,
 				AEE8C0D32AF57D6E0093964C /* NetworkErrors.swift in Sources */,
