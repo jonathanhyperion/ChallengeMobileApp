@@ -4,6 +4,7 @@
 //
 
 import Moya
+import RxSwift
 import Foundation
 
 enum AuthApi {
@@ -42,5 +43,34 @@ extension AuthApi: TargetType {
     
     var headers: [String : String]? {
         return ["Content-type": "application/json"]
+    }
+    
+    var sampleData: Data {
+        var data = Data()
+        switch self {
+        case .login:
+            data = """
+            {
+                "data": {
+                    "id": "123",
+                    "type": "token",
+                    "attributes": {
+                        "access_token": "123-f2i0CG6MDsf-wJE9FyYrhSGAOtxBkhYWDI",
+                        "token_type": "Bearer",
+                        "expires_in": 7200,
+                        "refresh_token": "l27GNT0kmkPbnEaUxniXyu4cHfPyWFr00kZTX5oWKA6c",
+                        "created_at": 1681974651
+                    }
+                }
+            }
+            """.dataEncoded
+        }
+        return data
+    }
+}
+
+extension String {
+    var dataEncoded: Data {
+        data(using: String.Encoding.utf8)!
     }
 }
