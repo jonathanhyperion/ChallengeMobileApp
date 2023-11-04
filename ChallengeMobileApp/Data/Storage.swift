@@ -65,6 +65,6 @@ final class Storage {
         print("Time Elapsed \(timeElapsedInMinutes) minutes")
         print("Time left for token to expire \(timeToWaitInMinutes) minutes")
         
-        return expiredToken > timeElapsedInMinutes
+        return timeElapsedInMinutes > expiredToken
     }
 }

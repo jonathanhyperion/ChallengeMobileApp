@@ -25,7 +25,7 @@ class AppCoordinatorViewModel: ObservableObject {
     
     func navigation() {
         if (isUserLoggedUseCase.execute()) {
-            if (!Storage.shared.isTokenExpired()) {
+            if (Storage.shared.isTokenExpired()) {
                 refreshToken()
             }
             routes = [.root(.home)]
@@ -59,9 +59,7 @@ class AppCoordinatorViewModel: ObservableObject {
         .sink(receiveCompletion: { error in
             switch error {
             case let .failure(error):
-                if let networkError = error as? NetworkRequestError {
-                    let result: NetworkErrors? = networkError.associatedValue()
-                }
+                if let _ = error as? NetworkRequestError {}
             case .finished:
                 break
             }
