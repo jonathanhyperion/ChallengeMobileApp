@@ -4,22 +4,26 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct SideNav: View {
     let reader: CGSize
+    let user: UserProfile
+    var goToLogin: () -> Void
+    var LogoutAction: () -> Void
     var body: some View {
         HStack {
             Spacer()
             VStack {
                 VStack(alignment: .leading) {
                     HStack {
-                        Text("Mai")
+                        Text(user.name ?? "")
                             .font(.custom(FontFamily.Neuzeit.heavy, fixedSize: 34.0))
                             .foregroundColor(.white)
                         
                         Spacer()
                         
-                        Asset.background.swiftUIImage
+                        KFImage(URL(string: (user.avatarURL ?? "")))
                             .resizable()
                             .frame(width: 35.0, height: 35.0)
                             .clipShape(Circle())
@@ -32,7 +36,8 @@ struct SideNav: View {
                     
                     Button(
                         action: {
-                            
+                            LogoutAction()
+                            goToLogin()
                         }, label: {
                             Text("Logout")
                                 .font(.custom(FontFamily.Neuzeit.heavy, fixedSize: 20.0))

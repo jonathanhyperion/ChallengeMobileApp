@@ -15,7 +15,7 @@ struct AppCoordinator: View {
                 ZStack {
                     switch screen {
                     case .home:
-                        HomeView()
+                        HomeView(goToLogin: viewModel.goToLogin)
                     case .login:
                         LoginView(pushHome: viewModel.goToHome)
                     }
