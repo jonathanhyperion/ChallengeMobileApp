@@ -177,21 +177,11 @@ code_sign_if_enabled() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FlowStacks/FlowStacks.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Moya.default-Combine-ReactiveSwift-RxSwift/Moya.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Moya/Moya.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/FlowStacks/FlowStacks.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Moya.default-Combine-ReactiveSwift-RxSwift/Moya.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework"
-  install_framework "${BUILT_PRODUCTS_DIR}/SwinjectAutoregistration/SwinjectAutoregistration.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/Moya/Moya.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait
