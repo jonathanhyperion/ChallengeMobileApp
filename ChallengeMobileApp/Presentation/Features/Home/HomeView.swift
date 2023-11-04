@@ -6,8 +6,28 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State private var isMenuOpen = true
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { reader in
+            VStack {
+                ZStack {
+                    if isMenuOpen {
+                        Color.black.opacity(0.1).onTapGesture {
+                            isMenuOpen.toggle()
+                        }
+                    }
+                    
+                    SideNav(reader: reader.size)
+                        .offset(x: isMenuOpen ? 0 : reader.size.width * 0.65)
+                        .animation(.easeInOut)
+                }
+                .onTapGesture {
+                    isMenuOpen.toggle()
+                }
+            }
+        }
+        .ignoresSafeArea()
     }
 }
 
