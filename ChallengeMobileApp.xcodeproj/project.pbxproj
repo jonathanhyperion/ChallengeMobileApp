@@ -7,8 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AEF700392AF45611003BDFCB /* ChallengeMobileAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF700382AF45611003BDFCB /* ChallengeMobileAppApp.swift */; };
-		AEF7003B2AF45611003BDFCB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7003A2AF45611003BDFCB /* ContentView.swift */; };
+		23849BE7ACA07C506DC58EB2 /* Pods_ChallengeMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F765B917BFC5B4913EA8D6CF /* Pods_ChallengeMobileApp.framework */; };
+		AE2CF3312AF4872B0095C63B /* Optional+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */; };
+		AE2CF3332AF487530095C63B /* Moya+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CF3322AF487530095C63B /* Moya+Publisher.swift */; };
+		AE4CD60E2AF4A562001246BF /* NeuzeitSLTStdBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */; };
+		AE4CD6102AF4A5C2001246BF /* NeuzeitSLTStdBookHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */; };
+		AE4CD6192AF4ACEE001246BF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD61B2AF4ACEE001246BF /* Localizable.strings */; };
+		AE9080F22AF48C64008EABC4 /* AuthNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F12AF48C64008EABC4 /* AuthNetworkService.swift */; };
+		AE9080F92AF49118008EABC4 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F82AF49118008EABC4 /* L10n.swift */; };
+		AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599292AF47F720099DDE9 /* Injector.swift */; };
+		AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */; };
+		AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992D2AF47FDE0099DDE9 /* K.swift */; };
+		AEC599322AF480860099DDE9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599312AF480860099DDE9 /* HomeView.swift */; };
+		AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599332AF480970099DDE9 /* LoginViewModel.swift */; };
+		AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */; };
+		AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599372AF483E20099DDE9 /* AuthApi.swift */; };
+		AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */; };
+		AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7003A2AF45611003BDFCB /* LoginView.swift */; };
 		AEF7003D2AF45614003BDFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF7003C2AF45614003BDFCB /* Assets.xcassets */; };
 		AEF700402AF45614003BDFCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF7003F2AF45614003BDFCB /* Preview Assets.xcassets */; };
 		AEF7004A2AF45615003BDFCB /* ChallengeMobileAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF700492AF45615003BDFCB /* ChallengeMobileAppTests.swift */; };
@@ -34,9 +49,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BDE76C1B945CB5D4FCB35F2 /* Pods-ChallengeMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileApp.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp.release.xcconfig"; sourceTree = "<group>"; };
+		AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Unwrap.swift"; sourceTree = "<group>"; };
+		AE2CF3322AF487530095C63B /* Moya+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Publisher.swift"; sourceTree = "<group>"; };
+		AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeuzeitSLTStdBook.otf; sourceTree = "<group>"; };
+		AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeuzeitSLTStdBookHeavy.otf; sourceTree = "<group>"; };
+		AE4CD6112AF4A7CA001246BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		AE4CD61A2AF4ACEE001246BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE9080F12AF48C64008EABC4 /* AuthNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkService.swift; sourceTree = "<group>"; };
+		AE9080F82AF49118008EABC4 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		AEC599292AF47F720099DDE9 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		AEC5992D2AF47FDE0099DDE9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		AEC599312AF480860099DDE9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AEC599332AF480970099DDE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		AEC599372AF483E20099DDE9 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
 		AEF700352AF45611003BDFCB /* ChallengeMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEF700382AF45611003BDFCB /* ChallengeMobileAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileAppApp.swift; sourceTree = "<group>"; };
-		AEF7003A2AF45611003BDFCB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileApp.swift; sourceTree = "<group>"; };
+		AEF7003A2AF45611003BDFCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AEF7003C2AF45614003BDFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF7003F2AF45614003BDFCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEF700452AF45615003BDFCB /* ChallengeMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +75,8 @@
 		AEF7004F2AF45615003BDFCB /* ChallengeMobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF700532AF45615003BDFCB /* ChallengeMobileAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileAppUITests.swift; sourceTree = "<group>"; };
 		AEF700552AF45615003BDFCB /* ChallengeMobileAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C8488A82DE2226A64E974D0E /* Pods-ChallengeMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileApp.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F765B917BFC5B4913EA8D6CF /* Pods_ChallengeMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23849BE7ACA07C506DC58EB2 /* Pods_ChallengeMobileApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +105,162 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0415EE32FE23E74B22F29E29 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C8488A82DE2226A64E974D0E /* Pods-ChallengeMobileApp.debug.xcconfig */,
+				6BDE76C1B945CB5D4FCB35F2 /* Pods-ChallengeMobileApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		52B9175F24921B8F0BC1B5FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F765B917BFC5B4913EA8D6CF /* Pods_ChallengeMobileApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE4CD60C2AF4A52D001246BF /* NeuzeitSLTStd */ = {
+			isa = PBXGroup;
+			children = (
+				AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */,
+				AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */,
+			);
+			path = NeuzeitSLTStd;
+			sourceTree = "<group>";
+		};
+		AE9080F32AF48F7C008EABC4 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				AEF7003C2AF45614003BDFCB /* Assets.xcassets */,
+				AE9080F52AF48FBA008EABC4 /* Fonts */,
+				AE9080F42AF48F97008EABC4 /* Resources */,
+				AE4CD61B2AF4ACEE001246BF /* Localizable.strings */,
+				AE9080F82AF49118008EABC4 /* L10n.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		AE9080F42AF48F97008EABC4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AE9080F52AF48FBA008EABC4 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AE4CD60C2AF4A52D001246BF /* NeuzeitSLTStd */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		AEC5991E2AF47E070099DDE9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */,
+				AEC599282AF47F530099DDE9 /* Utilities */,
+				AEC599272AF47F4C0099DDE9 /* Extensions */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AEC5991F2AF47E150099DDE9 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				AEC599292AF47F720099DDE9 /* Injector.swift */,
+				AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		AEC599202AF47E2C0099DDE9 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				AEC599372AF483E20099DDE9 /* AuthApi.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AEC599212AF47E420099DDE9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				AEC599222AF47E5A0099DDE9 /* Models */,
+				AE9080F12AF48C64008EABC4 /* AuthNetworkService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		AEC599222AF47E5A0099DDE9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AEC599242AF47ED70099DDE9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				AEC599262AF47EF50099DDE9 /* Features */,
+				AEC599252AF47EE30099DDE9 /* Shared */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		AEC599252AF47EE30099DDE9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AEC599262AF47EF50099DDE9 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				AEC599302AF480660099DDE9 /* Login */,
+				AEC5992F2AF480600099DDE9 /* Home */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		AEC599272AF47F4C0099DDE9 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */,
+				AE2CF3322AF487530095C63B /* Moya+Publisher.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AEC599282AF47F530099DDE9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AEC5992D2AF47FDE0099DDE9 /* K.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		AEC5992F2AF480600099DDE9 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AEC599312AF480860099DDE9 /* HomeView.swift */,
+				AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AEC599302AF480660099DDE9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AEF7003A2AF45611003BDFCB /* LoginView.swift */,
+				AEC599332AF480970099DDE9 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		AEF7002C2AF45611003BDFCB = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +268,8 @@
 				AEF700482AF45615003BDFCB /* ChallengeMobileAppTests */,
 				AEF700522AF45615003BDFCB /* ChallengeMobileAppUITests */,
 				AEF700362AF45611003BDFCB /* Products */,
+				0415EE32FE23E74B22F29E29 /* Pods */,
+				52B9175F24921B8F0BC1B5FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,9 +286,13 @@
 		AEF700372AF45611003BDFCB /* ChallengeMobileApp */ = {
 			isa = PBXGroup;
 			children = (
-				AEF700382AF45611003BDFCB /* ChallengeMobileAppApp.swift */,
-				AEF7003A2AF45611003BDFCB /* ContentView.swift */,
-				AEF7003C2AF45614003BDFCB /* Assets.xcassets */,
+				AE4CD6112AF4A7CA001246BF /* Info.plist */,
+				AE9080F32AF48F7C008EABC4 /* SupportingFiles */,
+				AEC599242AF47ED70099DDE9 /* Presentation */,
+				AEC599212AF47E420099DDE9 /* Services */,
+				AEC599202AF47E2C0099DDE9 /* Networking */,
+				AEC5991F2AF47E150099DDE9 /* Dependencies */,
+				AEC5991E2AF47E070099DDE9 /* App */,
 				AEF7003E2AF45614003BDFCB /* Preview Content */,
 			);
 			path = ChallengeMobileApp;
@@ -134,15 +330,19 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEF700592AF45615003BDFCB /* Build configuration list for PBXNativeTarget "ChallengeMobileApp" */;
 			buildPhases = (
+				DD220004A16FC0890AC0967C /* [CP] Check Pods Manifest.lock */,
 				AEF700312AF45611003BDFCB /* Sources */,
 				AEF700322AF45611003BDFCB /* Frameworks */,
 				AEF700332AF45611003BDFCB /* Resources */,
+				9C0F61816E63BF7AA223D5A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ChallengeMobileApp;
+			packageProductDependencies = (
+			);
 			productName = ChallengeMobileApp;
 			productReference = AEF700352AF45611003BDFCB /* ChallengeMobileApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +415,8 @@
 				Base,
 			);
 			mainGroup = AEF7002C2AF45611003BDFCB;
+			packageReferences = (
+			);
 			productRefGroup = AEF700362AF45611003BDFCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +434,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEF700402AF45614003BDFCB /* Preview Assets.xcassets in Resources */,
+				AE4CD6102AF4A5C2001246BF /* NeuzeitSLTStdBookHeavy.otf in Resources */,
+				AE4CD60E2AF4A562001246BF /* NeuzeitSLTStdBook.otf in Resources */,
+				AE4CD6192AF4ACEE001246BF /* Localizable.strings in Resources */,
 				AEF7003D2AF45614003BDFCB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,13 +457,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9C0F61816E63BF7AA223D5A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD220004A16FC0890AC0967C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeMobileApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AEF700312AF45611003BDFCB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF7003B2AF45611003BDFCB /* ContentView.swift in Sources */,
-				AEF700392AF45611003BDFCB /* ChallengeMobileAppApp.swift in Sources */,
+				AEC599322AF480860099DDE9 /* HomeView.swift in Sources */,
+				AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */,
+				AE9080F22AF48C64008EABC4 /* AuthNetworkService.swift in Sources */,
+				AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */,
+				AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */,
+				AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */,
+				AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */,
+				AE2CF3332AF487530095C63B /* Moya+Publisher.swift in Sources */,
+				AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */,
+				AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */,
+				AE9080F92AF49118008EABC4 /* L10n.swift in Sources */,
+				AE2CF3312AF4872B0095C63B /* Optional+Unwrap.swift in Sources */,
+				AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +551,17 @@
 			targetProxy = AEF700502AF45615003BDFCB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AE4CD61B2AF4ACEE001246BF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AE4CD61A2AF4ACEE001246BF /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		AEF700572AF45615003BDFCB /* Debug */ = {
@@ -411,6 +680,7 @@
 		};
 		AEF7005A2AF45615003BDFCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8488A82DE2226A64E974D0E /* Pods-ChallengeMobileApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -419,6 +689,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChallengeMobileApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChallengeMobileApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,6 +710,7 @@
 		};
 		AEF7005B2AF45615003BDFCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BDE76C1B945CB5D4FCB35F2 /* Pods-ChallengeMobileApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,6 +719,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ChallengeMobileApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChallengeMobileApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
