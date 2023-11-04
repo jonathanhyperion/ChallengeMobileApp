@@ -7,7 +7,12 @@ import Foundation
 
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name
-internal enum L10n {}
+internal enum L10n {
+    internal static let email = L10n.tr("Localizable", "email")
+    internal static let password = L10n.tr("Localizable", "password")
+    internal static let forgotPassword = L10n.tr("Localizable", "forgotPassword")
+    internal static let login = L10n.tr("Localizable", "login")
+}
 
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name

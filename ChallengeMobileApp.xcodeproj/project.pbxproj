@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		23849BE7ACA07C506DC58EB2 /* Pods_ChallengeMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F765B917BFC5B4913EA8D6CF /* Pods_ChallengeMobileApp.framework */; };
+		357B7832C8701F84D521BCD4 /* Pods_ChallengeMobileAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CAA4E861D6B0C30FC4FD09 /* Pods_ChallengeMobileAppTests.framework */; };
 		AE2CF3312AF4872B0095C63B /* Optional+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */; };
-		AE2CF3332AF487530095C63B /* Moya+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CF3322AF487530095C63B /* Moya+Publisher.swift */; };
 		AE4CD60E2AF4A562001246BF /* NeuzeitSLTStdBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */; };
 		AE4CD6102AF4A5C2001246BF /* NeuzeitSLTStdBookHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */; };
 		AE4CD6192AF4ACEE001246BF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD61B2AF4ACEE001246BF /* Localizable.strings */; };
-		AE9080F22AF48C64008EABC4 /* AuthNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F12AF48C64008EABC4 /* AuthNetworkService.swift */; };
+		AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592912AF558BE005C4515 /* LoginResponse.swift */; };
+		AE5592952AF55917005C4515 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592942AF55917005C4515 /* LoginRequest.swift */; };
+		AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592982AF55AC7005C4515 /* AccessToken.swift */; };
+		AE9080F22AF48C64008EABC4 /* AuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */; };
 		AE9080F92AF49118008EABC4 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F82AF49118008EABC4 /* L10n.swift */; };
+		AEAFFDF82AF4D25600E7B5D0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */; };
+		AEAFFDFA2AF4E9D400E7B5D0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */; };
+		AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */; };
+		AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */; };
 		AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599292AF47F720099DDE9 /* Injector.swift */; };
 		AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */; };
 		AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992D2AF47FDE0099DDE9 /* K.swift */; };
@@ -22,13 +28,22 @@
 		AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599332AF480970099DDE9 /* LoginViewModel.swift */; };
 		AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */; };
 		AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599372AF483E20099DDE9 /* AuthApi.swift */; };
+		AEE8C0D32AF57D6E0093964C /* NetworkErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0D22AF57D6E0093964C /* NetworkErrors.swift */; };
+		AEE8C0D52AF57D860093964C /* NetworkRequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0D42AF57D860093964C /* NetworkRequestError.swift */; };
+		AEE8C0D92AF57F1C0093964C /* LoginUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */; };
+		AEE8C0DD2AF583880093964C /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0DC2AF583880093964C /* Storage.swift */; };
+		AEE8C0E22AF5855D0093964C /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E12AF5855D0093964C /* AuthRepository.swift */; };
+		AEE8C0E52AF58C650093964C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E42AF58C650093964C /* AppCoordinator.swift */; };
+		AEE8C0E72AF58D380093964C /* AppCoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */; };
+		AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */; };
+		AEE8C0EB2AF5AF520093964C /* IsUserLoggedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */; };
+		AEE8C0EE2AF5B34E0093964C /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0ED2AF5B34E0093964C /* Screen.swift */; };
+		AEE8C0F02AF5B7AC0093964C /* AuthAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0EF2AF5B7AC0093964C /* AuthAPIServiceTests.swift */; };
 		AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */; };
 		AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF7003A2AF45611003BDFCB /* LoginView.swift */; };
 		AEF7003D2AF45614003BDFCB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF7003C2AF45614003BDFCB /* Assets.xcassets */; };
 		AEF700402AF45614003BDFCB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEF7003F2AF45614003BDFCB /* Preview Assets.xcassets */; };
-		AEF7004A2AF45615003BDFCB /* ChallengeMobileAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF700492AF45615003BDFCB /* ChallengeMobileAppTests.swift */; };
-		AEF700542AF45615003BDFCB /* ChallengeMobileAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF700532AF45615003BDFCB /* ChallengeMobileAppUITests.swift */; };
-		AEF700562AF45615003BDFCB /* ChallengeMobileAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF700552AF45615003BDFCB /* ChallengeMobileAppUITestsLaunchTests.swift */; };
+		E936CDE091AEE9AAD71AAB06 /* Pods_ChallengeMobileApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DECD180C692692A35B65F30 /* Pods_ChallengeMobileApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,15 +64,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6BDE76C1B945CB5D4FCB35F2 /* Pods-ChallengeMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileApp.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp.release.xcconfig"; sourceTree = "<group>"; };
+		31CAA4E861D6B0C30FC4FD09 /* Pods_ChallengeMobileAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMobileAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D1F9E27D264813A4CBE44B6 /* Pods-ChallengeMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileApp.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
+		4D72FB1B762C28ED2B06CAF5 /* Pods-ChallengeMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileAppTests/Pods-ChallengeMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		6C128424013A735BC596BD25 /* Pods-ChallengeMobileAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileAppTests/Pods-ChallengeMobileAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7DECD180C692692A35B65F30 /* Pods_ChallengeMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Unwrap.swift"; sourceTree = "<group>"; };
-		AE2CF3322AF487530095C63B /* Moya+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+Publisher.swift"; sourceTree = "<group>"; };
 		AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeuzeitSLTStdBook.otf; sourceTree = "<group>"; };
 		AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeuzeitSLTStdBookHeavy.otf; sourceTree = "<group>"; };
 		AE4CD6112AF4A7CA001246BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AE4CD61A2AF4ACEE001246BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AE9080F12AF48C64008EABC4 /* AuthNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkService.swift; sourceTree = "<group>"; };
+		AE5592912AF558BE005C4515 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		AE5592942AF55917005C4515 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		AE5592982AF55AC7005C4515 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
 		AE9080F82AF49118008EABC4 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
+		AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		AEC599292AF47F720099DDE9 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		AEC5992D2AF47FDE0099DDE9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
@@ -65,18 +90,25 @@
 		AEC599332AF480970099DDE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		AEC599372AF483E20099DDE9 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
+		AEE8C0D22AF57D6E0093964C /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
+		AEE8C0D42AF57D860093964C /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
+		AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
+		AEE8C0DC2AF583880093964C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
+		AEE8C0E12AF5855D0093964C /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
+		AEE8C0E42AF58C650093964C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorViewModel.swift; sourceTree = "<group>"; };
+		AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
+		AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsUserLoggedUseCase.swift; sourceTree = "<group>"; };
+		AEE8C0ED2AF5B34E0093964C /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
+		AEE8C0EF2AF5B7AC0093964C /* AuthAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIServiceTests.swift; sourceTree = "<group>"; };
 		AEF700352AF45611003BDFCB /* ChallengeMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileApp.swift; sourceTree = "<group>"; };
 		AEF7003A2AF45611003BDFCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		AEF7003C2AF45614003BDFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF7003F2AF45614003BDFCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEF700452AF45615003BDFCB /* ChallengeMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEF700492AF45615003BDFCB /* ChallengeMobileAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileAppTests.swift; sourceTree = "<group>"; };
 		AEF7004F2AF45615003BDFCB /* ChallengeMobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEF700532AF45615003BDFCB /* ChallengeMobileAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileAppUITests.swift; sourceTree = "<group>"; };
-		AEF700552AF45615003BDFCB /* ChallengeMobileAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		C8488A82DE2226A64E974D0E /* Pods-ChallengeMobileApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileApp.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp.debug.xcconfig"; sourceTree = "<group>"; };
-		F765B917BFC5B4913EA8D6CF /* Pods_ChallengeMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA1A45ADF7EF899C65D0F2D5 /* Pods-ChallengeMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileApp.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23849BE7ACA07C506DC58EB2 /* Pods_ChallengeMobileApp.framework in Frameworks */,
+				E936CDE091AEE9AAD71AAB06 /* Pods_ChallengeMobileApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357B7832C8701F84D521BCD4 /* Pods_ChallengeMobileAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,16 +141,19 @@
 		0415EE32FE23E74B22F29E29 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				C8488A82DE2226A64E974D0E /* Pods-ChallengeMobileApp.debug.xcconfig */,
-				6BDE76C1B945CB5D4FCB35F2 /* Pods-ChallengeMobileApp.release.xcconfig */,
+				3D1F9E27D264813A4CBE44B6 /* Pods-ChallengeMobileApp.debug.xcconfig */,
+				FA1A45ADF7EF899C65D0F2D5 /* Pods-ChallengeMobileApp.release.xcconfig */,
+				6C128424013A735BC596BD25 /* Pods-ChallengeMobileAppTests.debug.xcconfig */,
+				4D72FB1B762C28ED2B06CAF5 /* Pods-ChallengeMobileAppTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		52B9175F24921B8F0BC1B5FE /* Frameworks */ = {
+		78891BD1C98A93C8952E4F71 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F765B917BFC5B4913EA8D6CF /* Pods_ChallengeMobileApp.framework */,
+				7DECD180C692692A35B65F30 /* Pods_ChallengeMobileApp.framework */,
+				31CAA4E861D6B0C30FC4FD09 /* Pods_ChallengeMobileAppTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,6 +165,40 @@
 				AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */,
 			);
 			path = NeuzeitSLTStd;
+			sourceTree = "<group>";
+		};
+		AE5592902AF5589F005C4515 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				AE5592912AF558BE005C4515 /* LoginResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		AE5592932AF558FC005C4515 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				AE5592942AF55917005C4515 /* LoginRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		AE5592962AF559C6005C4515 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8C0DE2AF5852F0093964C /* Repository */,
+				AEE8C0D62AF57EF50093964C /* UseCase */,
+				AE5592972AF559CE005C4515 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		AE5592972AF559CE005C4515 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				AE5592982AF55AC7005C4515 /* AccessToken.swift */,
+			);
+			path = Entities;
 			sourceTree = "<group>";
 		};
 		AE9080F32AF48F7C008EABC4 /* SupportingFiles */ = {
@@ -146,6 +216,8 @@
 		AE9080F42AF48F97008EABC4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */,
+				AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -161,6 +233,7 @@
 		AEC5991E2AF47E070099DDE9 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				AEE8C0EC2AF5B3300093964C /* Coordinator */,
 				AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */,
 				AEC599282AF47F530099DDE9 /* Utilities */,
 				AEC599272AF47F4C0099DDE9 /* Extensions */,
@@ -173,32 +246,17 @@
 			children = (
 				AEC599292AF47F720099DDE9 /* Injector.swift */,
 				AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */,
+				AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
 		};
-		AEC599202AF47E2C0099DDE9 /* Networking */ = {
+		AEC599212AF47E420099DDE9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				AEC599372AF483E20099DDE9 /* AuthApi.swift */,
 			);
-			path = Networking;
-			sourceTree = "<group>";
-		};
-		AEC599212AF47E420099DDE9 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				AEC599222AF47E5A0099DDE9 /* Models */,
-				AE9080F12AF48C64008EABC4 /* AuthNetworkService.swift */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		AEC599222AF47E5A0099DDE9 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		AEC599242AF47ED70099DDE9 /* Presentation */ = {
@@ -213,6 +271,8 @@
 		AEC599252AF47EE30099DDE9 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */,
+				AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -230,7 +290,6 @@
 			isa = PBXGroup;
 			children = (
 				AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */,
-				AE2CF3322AF487530095C63B /* Moya+Publisher.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,15 +320,87 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		AEE8C0D12AF57D590093964C /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8C0D22AF57D6E0093964C /* NetworkErrors.swift */,
+				AEE8C0D42AF57D860093964C /* NetworkRequestError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		AEE8C0D62AF57EF50093964C /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8C0D72AF57F0E0093964C /* Login */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		AEE8C0D72AF57F0E0093964C /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */,
+				AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		AEE8C0DA2AF583020093964C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8C0DB2AF583730093964C /* Network */,
+				AEE8C0DC2AF583880093964C /* Storage.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		AEE8C0DB2AF583730093964C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8C0E32AF585F40093964C /* Repository */,
+				AEC599212AF47E420099DDE9 /* Service */,
+				AE5592932AF558FC005C4515 /* Request */,
+				AEE8C0D12AF57D590093964C /* Error */,
+				AE5592902AF5589F005C4515 /* Response */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AEE8C0DE2AF5852F0093964C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8C0E12AF5855D0093964C /* AuthRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AEE8C0E32AF585F40093964C /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		AEE8C0EC2AF5B3300093964C /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */,
+				AEE8C0E42AF58C650093964C /* AppCoordinator.swift */,
+				AEE8C0ED2AF5B34E0093964C /* Screen.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		AEF7002C2AF45611003BDFCB = {
 			isa = PBXGroup;
 			children = (
 				AEF700372AF45611003BDFCB /* ChallengeMobileApp */,
 				AEF700482AF45615003BDFCB /* ChallengeMobileAppTests */,
-				AEF700522AF45615003BDFCB /* ChallengeMobileAppUITests */,
 				AEF700362AF45611003BDFCB /* Products */,
 				0415EE32FE23E74B22F29E29 /* Pods */,
-				52B9175F24921B8F0BC1B5FE /* Frameworks */,
+				78891BD1C98A93C8952E4F71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -286,11 +417,11 @@
 		AEF700372AF45611003BDFCB /* ChallengeMobileApp */ = {
 			isa = PBXGroup;
 			children = (
+				AEE8C0DA2AF583020093964C /* Data */,
+				AE5592962AF559C6005C4515 /* Domain */,
 				AE4CD6112AF4A7CA001246BF /* Info.plist */,
 				AE9080F32AF48F7C008EABC4 /* SupportingFiles */,
 				AEC599242AF47ED70099DDE9 /* Presentation */,
-				AEC599212AF47E420099DDE9 /* Services */,
-				AEC599202AF47E2C0099DDE9 /* Networking */,
 				AEC5991F2AF47E150099DDE9 /* Dependencies */,
 				AEC5991E2AF47E070099DDE9 /* App */,
 				AEF7003E2AF45614003BDFCB /* Preview Content */,
@@ -309,18 +440,9 @@
 		AEF700482AF45615003BDFCB /* ChallengeMobileAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				AEF700492AF45615003BDFCB /* ChallengeMobileAppTests.swift */,
+				AEE8C0EF2AF5B7AC0093964C /* AuthAPIServiceTests.swift */,
 			);
 			path = ChallengeMobileAppTests;
-			sourceTree = "<group>";
-		};
-		AEF700522AF45615003BDFCB /* ChallengeMobileAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AEF700532AF45615003BDFCB /* ChallengeMobileAppUITests.swift */,
-				AEF700552AF45615003BDFCB /* ChallengeMobileAppUITestsLaunchTests.swift */,
-			);
-			path = ChallengeMobileAppUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,19 +452,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEF700592AF45615003BDFCB /* Build configuration list for PBXNativeTarget "ChallengeMobileApp" */;
 			buildPhases = (
-				DD220004A16FC0890AC0967C /* [CP] Check Pods Manifest.lock */,
+				67CAD57F28E9E9080E028CD1 /* [CP] Check Pods Manifest.lock */,
 				AEF700312AF45611003BDFCB /* Sources */,
 				AEF700322AF45611003BDFCB /* Frameworks */,
 				AEF700332AF45611003BDFCB /* Resources */,
-				9C0F61816E63BF7AA223D5A3 /* [CP] Embed Pods Frameworks */,
+				1887E8E83C63AC5A04CD6B66 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = ChallengeMobileApp;
-			packageProductDependencies = (
-			);
 			productName = ChallengeMobileApp;
 			productReference = AEF700352AF45611003BDFCB /* ChallengeMobileApp.app */;
 			productType = "com.apple.product-type.application";
@@ -351,9 +471,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEF7005C2AF45615003BDFCB /* Build configuration list for PBXNativeTarget "ChallengeMobileAppTests" */;
 			buildPhases = (
+				5AFF385CD97162094C80DE3D /* [CP] Check Pods Manifest.lock */,
 				AEF700412AF45615003BDFCB /* Sources */,
 				AEF700422AF45615003BDFCB /* Frameworks */,
 				AEF700432AF45615003BDFCB /* Resources */,
+				299F7395784B3BAE060567FE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -415,8 +537,6 @@
 				Base,
 			);
 			mainGroup = AEF7002C2AF45611003BDFCB;
-			packageReferences = (
-			);
 			productRefGroup = AEF700362AF45611003BDFCB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -458,7 +578,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		9C0F61816E63BF7AA223D5A3 /* [CP] Embed Pods Frameworks */ = {
+		1887E8E83C63AC5A04CD6B66 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -475,7 +595,46 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DD220004A16FC0890AC0967C /* [CP] Check Pods Manifest.lock */ = {
+		299F7395784B3BAE060567FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeMobileAppTests/Pods-ChallengeMobileAppTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ChallengeMobileAppTests/Pods-ChallengeMobileAppTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChallengeMobileAppTests/Pods-ChallengeMobileAppTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5AFF385CD97162094C80DE3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ChallengeMobileAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		67CAD57F28E9E9080E028CD1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -505,18 +664,34 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEC599322AF480860099DDE9 /* HomeView.swift in Sources */,
+				AEAFFDFA2AF4E9D400E7B5D0 /* Fonts.swift in Sources */,
+				AEE8C0E52AF58C650093964C /* AppCoordinator.swift in Sources */,
+				AE5592952AF55917005C4515 /* LoginRequest.swift in Sources */,
+				AEE8C0E22AF5855D0093964C /* AuthRepository.swift in Sources */,
+				AEE8C0D52AF57D860093964C /* NetworkRequestError.swift in Sources */,
+				AEE8C0EB2AF5AF520093964C /* IsUserLoggedUseCase.swift in Sources */,
+				AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */,
+				AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */,
+				AEE8C0DD2AF583880093964C /* Storage.swift in Sources */,
 				AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */,
-				AE9080F22AF48C64008EABC4 /* AuthNetworkService.swift in Sources */,
+				AE9080F22AF48C64008EABC4 /* AuthRepositoryImpl.swift in Sources */,
 				AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */,
+				AEE8C0EE2AF5B34E0093964C /* Screen.swift in Sources */,
+				AEE8C0E72AF58D380093964C /* AppCoordinatorViewModel.swift in Sources */,
 				AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */,
 				AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */,
+				AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */,
+				AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */,
 				AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */,
-				AE2CF3332AF487530095C63B /* Moya+Publisher.swift in Sources */,
+				AEAFFDF82AF4D25600E7B5D0 /* Assets.swift in Sources */,
 				AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */,
 				AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */,
 				AE9080F92AF49118008EABC4 /* L10n.swift in Sources */,
+				AEE8C0D92AF57F1C0093964C /* LoginUseCase.swift in Sources */,
+				AEE8C0D32AF57D6E0093964C /* NetworkErrors.swift in Sources */,
 				AE2CF3312AF4872B0095C63B /* Optional+Unwrap.swift in Sources */,
 				AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */,
+				AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +699,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF7004A2AF45615003BDFCB /* ChallengeMobileAppTests.swift in Sources */,
+				AEE8C0F02AF5B7AC0093964C /* AuthAPIServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,8 +707,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEF700562AF45615003BDFCB /* ChallengeMobileAppUITestsLaunchTests.swift in Sources */,
-				AEF700542AF45615003BDFCB /* ChallengeMobileAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,7 +853,7 @@
 		};
 		AEF7005A2AF45615003BDFCB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8488A82DE2226A64E974D0E /* Pods-ChallengeMobileApp.debug.xcconfig */;
+			baseConfigurationReference = 3D1F9E27D264813A4CBE44B6 /* Pods-ChallengeMobileApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -710,7 +883,7 @@
 		};
 		AEF7005B2AF45615003BDFCB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6BDE76C1B945CB5D4FCB35F2 /* Pods-ChallengeMobileApp.release.xcconfig */;
+			baseConfigurationReference = FA1A45ADF7EF899C65D0F2D5 /* Pods-ChallengeMobileApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -740,6 +913,7 @@
 		};
 		AEF7005D2AF45615003BDFCB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C128424013A735BC596BD25 /* Pods-ChallengeMobileAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -759,6 +933,7 @@
 		};
 		AEF7005E2AF45615003BDFCB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D72FB1B762C28ED2B06CAF5 /* Pods-ChallengeMobileAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

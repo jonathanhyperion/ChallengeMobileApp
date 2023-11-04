@@ -12,5 +12,15 @@ target 'ChallengeMobileApp' do
   pod 'Moya/RxSwift', '~> 15.0'
   pod 'Moya/ReactiveSwift', '~> 15.0'
   pod 'Moya/Combine', '~> 15.0'
+  pod 'FlowStacks'
+  
+end
+
+target 'ChallengeMobileAppTests' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for ChallengeMobileAppTest
+  pod 'Moya', '~> 15.0'
   
 end
