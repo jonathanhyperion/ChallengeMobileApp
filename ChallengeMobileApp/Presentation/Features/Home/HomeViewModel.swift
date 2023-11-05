@@ -60,6 +60,12 @@ final class HomeViewModel: ObservableObject {
         )
         .store(in: &cancellable)
     }
+    
+    func todayDate() -> String {
+        let today = Date()
+        let dateFormatter = today.toString(format: "EEEE, MMMM dd")
+        return dateFormatter
+    }
 }
 
 extension HomeViewModel {

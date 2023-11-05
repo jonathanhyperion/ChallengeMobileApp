@@ -26,6 +26,7 @@ internal enum Asset {
     //MARK: Images
     internal static let background = ImageAsset(name: "background")
     internal static let logoWhite = ImageAsset(name: "logoWhite")
+    internal static let nextIcon = ImageAsset(name: "nextIcon")
 }
 
 // swiftlint:enable identifier_name line_length nesting type_body_length type_name
