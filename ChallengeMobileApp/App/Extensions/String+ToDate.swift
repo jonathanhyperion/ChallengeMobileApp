@@ -6,9 +6,9 @@
 import Foundation
 
 extension String {
-    func toDate() -> Date {
+    func toDate(format: String) -> Date {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss Z"
+        dateFormatter.dateFormat = format
         
         if let date = dateFormatter.date(from: self) {
             return date

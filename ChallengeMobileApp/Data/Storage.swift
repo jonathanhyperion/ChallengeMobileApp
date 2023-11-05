@@ -54,13 +54,13 @@ final class Storage {
     
     func isTokenExpired() -> Bool {
         let now = Date()
-        let timeElapsed = Int(now.timeIntervalSince(getCreateTokenAt().toDate()))
+        let timeElapsed = Int(now.timeIntervalSince(getCreateTokenAt().toDate(format: "yyyy-MM-dd HH:mm:ss Z")))
         let timeElapsedInMinutes = timeElapsed / 60
         let expiredToken = getExpiresTokenIn() / 60
         let timeToWaitInMinutes = expiredToken - timeElapsedInMinutes
         
         print("Create \(getCreateTokenAt())")
-        print("Now \(now.toString())")
+        print("Now \(now.toString(format: "yyyy-MM-dd HH:mm:ss Z"))")
         print("Token expiration time \(expiredToken) minutes")
         print("Time Elapsed \(timeElapsedInMinutes) minutes")
         print("Time left for token to expire \(timeToWaitInMinutes) minutes")

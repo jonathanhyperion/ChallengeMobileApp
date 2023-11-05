@@ -30,7 +30,7 @@ struct AuthRepositoryImpl: AuthRepository {
                 )
                 
                 let currentTime = Date()
-                Storage.shared.saveCreateTokenAt(createdAt: currentTime.toString())
+                Storage.shared.saveCreateTokenAt(createdAt: currentTime.toString(format: "yyyy-MM-dd HH:mm:ss Z"))
                 Storage.shared.saveRefreshToken(token: response.data?.attributes?.refreshToken ?? "")
                 Storage.shared.saveExpiresTokenIn(expiresIn: response.data?.attributes?.expiresIn ?? 0)
                 Storage.shared.saveTokenAuth(token: response.data?.attributes?.accessToken ?? "")
@@ -59,7 +59,7 @@ struct AuthRepositoryImpl: AuthRepository {
                 )
                 
                 let currentTime = Date()
-                Storage.shared.saveCreateTokenAt(createdAt: currentTime.toString())
+                Storage.shared.saveCreateTokenAt(createdAt: currentTime.toString(format: "yyyy-MM-dd HH:mm:ss Z"))
                 Storage.shared.saveRefreshToken(token: response.data?.attributes?.refreshToken ?? "")
                 Storage.shared.saveExpiresTokenIn(expiresIn: response.data?.attributes?.expiresIn ?? 0)
                 Storage.shared.saveTokenAuth(token: response.data?.attributes?.accessToken ?? "")
