@@ -14,7 +14,7 @@ struct HomeView: View {
     var body: some View {
         GeometryReader { reader in
             ZStack {
-                HomeContetView(isMenuOpen: $isMenuOpen, viewModel: viewModel, reader: reader.size)
+                HomeContetView(viewModel: viewModel, isMenuOpen: $isMenuOpen, reader: reader.size)
                 
                 if isMenuOpen {
                     Color.black.opacity(0.4).onTapGesture {
@@ -33,6 +33,7 @@ struct HomeView: View {
                 .animation(.easeInOut)
             }
         }
+        .navigationBarBackButtonHidden(true)
         .ignoresSafeArea()
         .onTapGesture {
             if isMenuOpen {
@@ -41,6 +42,7 @@ struct HomeView: View {
         }
         .onAppear {
             viewModel.getProfile()
+            viewModel.getSurveys()
         }
     }
 }

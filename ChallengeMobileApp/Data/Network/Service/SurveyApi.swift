@@ -37,8 +37,8 @@ extension SurveyApi: TargetType {
         switch self {
         case let .getSurveys(pageNumber, pageSize):
             return .requestParameters(parameters: [
-                "page[number]": pageSize,
-                "page[size]": pageNumber
+                "page[number]": pageNumber,
+                "page[size]": pageSize
             ], encoding: URLEncoding())
         }
     }

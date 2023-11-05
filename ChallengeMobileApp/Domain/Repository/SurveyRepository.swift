@@ -8,5 +8,5 @@ import Moya
 import Combine
 
 protocol SurveyRepository {
-    func getSurveys(pageNumber: Int, pageSize: Int) -> AnyPublisher<[SurveyItemList]?, Error>
+    func getSurveys(pageNumber: Int, pageSize: Int) -> AnyPublisher<[SurveyItemList], Error>
 }

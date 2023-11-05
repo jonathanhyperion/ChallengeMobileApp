@@ -17,7 +17,7 @@ struct SurveyRepositoryImpl: SurveyRepository {
         api = provider
     }
     
-    func getSurveys(pageNumber: Int, pageSize: Int) -> AnyPublisher<[SurveyItemList]?, Error> {
+    func getSurveys(pageNumber: Int, pageSize: Int) -> AnyPublisher<[SurveyItemList], Error> {
         api.requestPublisher(.getSurveys(pageNumber: pageNumber, pageSize: pageSize))
             .map(\.data)
             .decode(type: SurveyListResponse.self, decoder: JSONDecoder())
@@ -31,7 +31,7 @@ struct SurveyRepositoryImpl: SurveyRepository {
                         return nil
                     }
                     return SurveyItemList(id: id, title: title, description: description, imageUrl: imageUrl)
-                }
+                } ?? []
             }
             .eraseToAnyPublisher()
     }
