@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		357B7832C8701F84D521BCD4 /* Pods_ChallengeMobileAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CAA4E861D6B0C30FC4FD09 /* Pods_ChallengeMobileAppTests.framework */; };
+		AE276E812AF9521400A12EA5 /* RepositoryAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE276E7D2AF9521400A12EA5 /* RepositoryAssambly.swift */; };
+		AE276E822AF9521400A12EA5 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE276E7E2AF9521400A12EA5 /* Injector.swift */; };
+		AE276E832AF9521400A12EA5 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE276E7F2AF9521400A12EA5 /* ServiceAssembly.swift */; };
+		AE276E842AF9521400A12EA5 /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE276E802AF9521400A12EA5 /* UseCaseAssembly.swift */; };
 		AE2CF3312AF4872B0095C63B /* Optional+Unwrap.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */; };
 		AE4CD60E2AF4A562001246BF /* NeuzeitSLTStdBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */; };
 		AE4CD6102AF4A5C2001246BF /* NeuzeitSLTStdBookHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */; };
@@ -94,75 +98,79 @@
 		4D72FB1B762C28ED2B06CAF5 /* Pods-ChallengeMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileAppTests/Pods-ChallengeMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6C128424013A735BC596BD25 /* Pods-ChallengeMobileAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileAppTests/Pods-ChallengeMobileAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DECD180C692692A35B65F30 /* Pods_ChallengeMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Unwrap.swift"; sourceTree = "<group>"; };
-		AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeuzeitSLTStdBook.otf; sourceTree = "<group>"; };
-		AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeuzeitSLTStdBookHeavy.otf; sourceTree = "<group>"; };
+		AE276E7D2AF9521400A12EA5 /* RepositoryAssambly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryAssambly.swift; path = ChallengeMobileApp/Dependencies/RepositoryAssambly.swift; sourceTree = SOURCE_ROOT; };
+		AE276E7E2AF9521400A12EA5 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Injector.swift; path = ChallengeMobileApp/Dependencies/Injector.swift; sourceTree = SOURCE_ROOT; };
+		AE276E7F2AF9521400A12EA5 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceAssembly.swift; path = ChallengeMobileApp/Dependencies/ServiceAssembly.swift; sourceTree = SOURCE_ROOT; };
+		AE276E802AF9521400A12EA5 /* UseCaseAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UseCaseAssembly.swift; path = ChallengeMobileApp/Dependencies/UseCaseAssembly.swift; sourceTree = SOURCE_ROOT; };
+		AE2CF3302AF4872B0095C63B /* Optional+Unwrap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Optional+Unwrap.swift"; path = "ChallengeMobileApp/App/Extensions/Optional+Unwrap.swift"; sourceTree = SOURCE_ROOT; };
+		AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NeuzeitSLTStdBook.otf; path = ChallengeMobileApp/SupportingFiles/Fonts/NeuzeitSLTStd/NeuzeitSLTStdBook.otf; sourceTree = SOURCE_ROOT; };
+		AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NeuzeitSLTStdBookHeavy.otf; path = ChallengeMobileApp/SupportingFiles/Fonts/NeuzeitSLTStd/NeuzeitSLTStdBookHeavy.otf; sourceTree = SOURCE_ROOT; };
 		AE4CD6112AF4A7CA001246BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AE4CD61A2AF4ACEE001246BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		AE50D5F02AF81BBA005E09B1 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
-		AE50D5F22AF833EC005E09B1 /* SurveyRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepositoryImpl.swift; sourceTree = "<group>"; };
-		AE50D5F42AF83414005E09B1 /* SurveyApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyApi.swift; sourceTree = "<group>"; };
-		AE50D5F62AF83429005E09B1 /* SurveyListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyListResponse.swift; sourceTree = "<group>"; };
-		AE50D5F82AF834CA005E09B1 /* SurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepository.swift; sourceTree = "<group>"; };
-		AE50D5FA2AF8353E005E09B1 /* SurveyItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyItemList.swift; sourceTree = "<group>"; };
-		AE50D5FD2AF83C18005E09B1 /* GetSurveysUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSurveysUseCase.swift; sourceTree = "<group>"; };
-		AE50D5FF2AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedAndShimmerViewModifier.swift; sourceTree = "<group>"; };
-		AE50D6012AF84456005E09B1 /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
-		AE50D6052AF84D4E005E09B1 /* View+IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IsHidden.swift"; sourceTree = "<group>"; };
-		AE50D6082AF865E7005E09B1 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
-		AE5592912AF558BE005C4515 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
-		AE5592942AF55917005C4515 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
-		AE5592982AF55AC7005C4515 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
-		AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
-		AE9080F82AF49118008EABC4 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
-		AE98691A2AF6BABE00C79CD3 /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
-		AE98691C2AF6BC7B00C79CD3 /* LogoutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutUseCase.swift; sourceTree = "<group>"; };
-		AE98691E2AF6BEC100C79CD3 /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutResponse.swift; sourceTree = "<group>"; };
-		AE9869202AF6C36200C79CD3 /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepositoryImpl.swift; sourceTree = "<group>"; };
-		AE9869222AF6C3B400C79CD3 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApi.swift; sourceTree = "<group>"; };
-		AE9869242AF6C51300C79CD3 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
-		AE9869272AF6C57600C79CD3 /* GetProfileUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileUseCase.swift; sourceTree = "<group>"; };
-		AE9869292AF6C65C00C79CD3 /* GetUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserResponse.swift; sourceTree = "<group>"; };
-		AE98692B2AF6C6D200C79CD3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
-		AE98692D2AF6D9C100C79CD3 /* SideNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNav.swift; sourceTree = "<group>"; };
-		AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
-		AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
-		AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		AEBE12542AF86D3700BB549D /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
-		AEBE12562AF8729A00BB549D /* SurveyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStorage.swift; sourceTree = "<group>"; };
-		AEBE12592AF8942600BB549D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
-		AEBE125B2AF8A5E100BB549D /* View+SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SwipeGesture.swift"; sourceTree = "<group>"; };
-		AEBE12612AF8C40000BB549D /* ForgotPasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRequest.swift; sourceTree = "<group>"; };
-		AEBE12632AF8C50200BB549D /* ForgotPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordResponse.swift; sourceTree = "<group>"; };
-		AEBE12652AF8C55800BB549D /* ForgotPasswordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordUseCase.swift; sourceTree = "<group>"; };
-		AEBE12672AF8C6A100BB549D /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
-		AEC5992D2AF47FDE0099DDE9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
-		AEC599312AF480860099DDE9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
-		AEC599332AF480970099DDE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		AEC599372AF483E20099DDE9 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
-		AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenUseCase.swift; sourceTree = "<group>"; };
-		AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenRequest.swift; sourceTree = "<group>"; };
-		AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
-		AEE2BB1D2AF6086700C29D4D /* String+DataEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DataEncoded.swift"; sourceTree = "<group>"; };
-		AEE2BB1F2AF6389900C29D4D /* Date+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+ToString.swift"; sourceTree = "<group>"; };
-		AEE2BB212AF638C400C29D4D /* String+ToDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ToDate.swift"; sourceTree = "<group>"; };
-		AEE8C0D22AF57D6E0093964C /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrors.swift; sourceTree = "<group>"; };
-		AEE8C0D42AF57D860093964C /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRequestError.swift; sourceTree = "<group>"; };
-		AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginUseCase.swift; sourceTree = "<group>"; };
-		AEE8C0DC2AF583880093964C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
-		AEE8C0E12AF5855D0093964C /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
-		AEE8C0E42AF58C650093964C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
-		AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorViewModel.swift; sourceTree = "<group>"; };
-		AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsUserLoggedUseCase.swift; sourceTree = "<group>"; };
-		AEE8C0ED2AF5B34E0093964C /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
-		AEE8C0EF2AF5B7AC0093964C /* AuthAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIServiceTests.swift; sourceTree = "<group>"; };
+		AE50D5F02AF81BBA005E09B1 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeContentView.swift; path = ChallengeMobileApp/Presentation/Features/Home/HomeContentView.swift; sourceTree = SOURCE_ROOT; };
+		AE50D5F22AF833EC005E09B1 /* SurveyRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SurveyRepositoryImpl.swift; path = ChallengeMobileApp/Data/Network/Repository/SurveyRepositoryImpl.swift; sourceTree = SOURCE_ROOT; };
+		AE50D5F42AF83414005E09B1 /* SurveyApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SurveyApi.swift; path = ChallengeMobileApp/Data/Network/Service/SurveyApi.swift; sourceTree = SOURCE_ROOT; };
+		AE50D5F62AF83429005E09B1 /* SurveyListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SurveyListResponse.swift; path = ChallengeMobileApp/Data/Network/Response/SurveyListResponse.swift; sourceTree = SOURCE_ROOT; };
+		AE50D5F82AF834CA005E09B1 /* SurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SurveyRepository.swift; path = ChallengeMobileApp/Domain/Repository/SurveyRepository.swift; sourceTree = SOURCE_ROOT; };
+		AE50D5FA2AF8353E005E09B1 /* SurveyItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SurveyItemList.swift; path = ChallengeMobileApp/Domain/Entities/SurveyItemList.swift; sourceTree = SOURCE_ROOT; };
+		AE50D5FD2AF83C18005E09B1 /* GetSurveysUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetSurveysUseCase.swift; path = ChallengeMobileApp/Domain/UseCase/Survey/GetSurveysUseCase.swift; sourceTree = SOURCE_ROOT; };
+		AE50D5FF2AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RedactedAndShimmerViewModifier.swift; path = ChallengeMobileApp/Presentation/Components/RedactedAndShimmerViewModifier.swift; sourceTree = SOURCE_ROOT; };
+		AE50D6012AF84456005E09B1 /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Shimmer.swift; path = ChallengeMobileApp/Presentation/Components/Shimmer.swift; sourceTree = SOURCE_ROOT; };
+		AE50D6052AF84D4E005E09B1 /* View+IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "View+IsHidden.swift"; path = "ChallengeMobileApp/App/Extensions/View+IsHidden.swift"; sourceTree = SOURCE_ROOT; };
+		AE50D6082AF865E7005E09B1 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordView.swift; path = ChallengeMobileApp/Presentation/Features/ForgotPassword/ForgotPasswordView.swift; sourceTree = SOURCE_ROOT; };
+		AE5592912AF558BE005C4515 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginResponse.swift; path = ChallengeMobileApp/Data/Network/Response/LoginResponse.swift; sourceTree = SOURCE_ROOT; };
+		AE5592942AF55917005C4515 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginRequest.swift; path = ChallengeMobileApp/Data/Network/Request/LoginRequest.swift; sourceTree = SOURCE_ROOT; };
+		AE5592982AF55AC7005C4515 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccessToken.swift; path = ChallengeMobileApp/Domain/Entities/AccessToken.swift; sourceTree = SOURCE_ROOT; };
+		AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthRepositoryImpl.swift; path = ChallengeMobileApp/Data/Network/Repository/AuthRepositoryImpl.swift; sourceTree = SOURCE_ROOT; };
+		AE9080F82AF49118008EABC4 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = L10n.swift; path = ChallengeMobileApp/SupportingFiles/L10n.swift; sourceTree = SOURCE_ROOT; };
+		AE98691A2AF6BABE00C79CD3 /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogoutRequest.swift; path = ChallengeMobileApp/Data/Network/Request/LogoutRequest.swift; sourceTree = SOURCE_ROOT; };
+		AE98691C2AF6BC7B00C79CD3 /* LogoutUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogoutUseCase.swift; path = ChallengeMobileApp/Domain/UseCase/Auth/LogoutUseCase.swift; sourceTree = SOURCE_ROOT; };
+		AE98691E2AF6BEC100C79CD3 /* LogoutResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogoutResponse.swift; path = ChallengeMobileApp/Data/Network/Response/LogoutResponse.swift; sourceTree = SOURCE_ROOT; };
+		AE9869202AF6C36200C79CD3 /* UserRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserRepositoryImpl.swift; path = ChallengeMobileApp/Data/Network/Repository/UserRepositoryImpl.swift; sourceTree = SOURCE_ROOT; };
+		AE9869222AF6C3B400C79CD3 /* UserApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserApi.swift; path = ChallengeMobileApp/Data/Network/Service/UserApi.swift; sourceTree = SOURCE_ROOT; };
+		AE9869242AF6C51300C79CD3 /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserRepository.swift; path = ChallengeMobileApp/Domain/Repository/UserRepository.swift; sourceTree = SOURCE_ROOT; };
+		AE9869272AF6C57600C79CD3 /* GetProfileUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetProfileUseCase.swift; path = ChallengeMobileApp/Domain/UseCase/User/GetProfileUseCase.swift; sourceTree = SOURCE_ROOT; };
+		AE9869292AF6C65C00C79CD3 /* GetUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GetUserResponse.swift; path = ChallengeMobileApp/Data/Network/Response/GetUserResponse.swift; sourceTree = SOURCE_ROOT; };
+		AE98692B2AF6C6D200C79CD3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserProfile.swift; path = ChallengeMobileApp/Domain/Entities/UserProfile.swift; sourceTree = SOURCE_ROOT; };
+		AE98692D2AF6D9C100C79CD3 /* SideNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SideNav.swift; path = ChallengeMobileApp/Presentation/Components/SideNav.swift; sourceTree = SOURCE_ROOT; };
+		AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Assets.swift; path = ChallengeMobileApp/SupportingFiles/Resources/Assets.swift; sourceTree = SOURCE_ROOT; };
+		AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Fonts.swift; path = ChallengeMobileApp/SupportingFiles/Resources/Fonts.swift; sourceTree = SOURCE_ROOT; };
+		AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VisualEffectBlur.swift; path = ChallengeMobileApp/Presentation/Components/VisualEffectBlur.swift; sourceTree = SOURCE_ROOT; };
+		AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CustomTextField.swift; path = ChallengeMobileApp/Presentation/Components/CustomTextField.swift; sourceTree = SOURCE_ROOT; };
+		AEBE12542AF86D3700BB549D /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SurveyView.swift; path = ChallengeMobileApp/Presentation/Features/Survey/SurveyView.swift; sourceTree = SOURCE_ROOT; };
+		AEBE12562AF8729A00BB549D /* SurveyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SurveyStorage.swift; path = ChallengeMobileApp/App/Storage/SurveyStorage.swift; sourceTree = SOURCE_ROOT; };
+		AEBE12592AF8942600BB549D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BackgroundView.swift; path = ChallengeMobileApp/Presentation/Components/BackgroundView.swift; sourceTree = SOURCE_ROOT; };
+		AEBE125B2AF8A5E100BB549D /* View+SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "View+SwipeGesture.swift"; path = "ChallengeMobileApp/App/Extensions/View+SwipeGesture.swift"; sourceTree = SOURCE_ROOT; };
+		AEBE12612AF8C40000BB549D /* ForgotPasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordRequest.swift; path = ChallengeMobileApp/Data/Network/Request/ForgotPasswordRequest.swift; sourceTree = SOURCE_ROOT; };
+		AEBE12632AF8C50200BB549D /* ForgotPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordResponse.swift; path = ChallengeMobileApp/Data/Network/Response/ForgotPasswordResponse.swift; sourceTree = SOURCE_ROOT; };
+		AEBE12652AF8C55800BB549D /* ForgotPasswordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordUseCase.swift; path = ChallengeMobileApp/Domain/UseCase/Auth/ForgotPasswordUseCase.swift; sourceTree = SOURCE_ROOT; };
+		AEBE12672AF8C6A100BB549D /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForgotPasswordViewModel.swift; path = ChallengeMobileApp/Presentation/Features/ForgotPassword/ForgotPasswordViewModel.swift; sourceTree = SOURCE_ROOT; };
+		AEC5992D2AF47FDE0099DDE9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = K.swift; path = ChallengeMobileApp/App/Utilities/K.swift; sourceTree = SOURCE_ROOT; };
+		AEC599312AF480860099DDE9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeView.swift; path = ChallengeMobileApp/Presentation/Features/Home/HomeView.swift; sourceTree = SOURCE_ROOT; };
+		AEC599332AF480970099DDE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewModel.swift; path = ChallengeMobileApp/Presentation/Features/Login/LoginViewModel.swift; sourceTree = SOURCE_ROOT; };
+		AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewModel.swift; path = ChallengeMobileApp/Presentation/Features/Home/HomeViewModel.swift; sourceTree = SOURCE_ROOT; };
+		AEC599372AF483E20099DDE9 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthApi.swift; path = ChallengeMobileApp/Data/Network/Service/AuthApi.swift; sourceTree = SOURCE_ROOT; };
+		AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RefreshTokenUseCase.swift; path = ChallengeMobileApp/Domain/UseCase/Auth/RefreshTokenUseCase.swift; sourceTree = SOURCE_ROOT; };
+		AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RefreshTokenRequest.swift; path = ChallengeMobileApp/Data/Network/Request/RefreshTokenRequest.swift; sourceTree = SOURCE_ROOT; };
+		AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RefreshTokenResponse.swift; path = ChallengeMobileApp/Data/Network/Response/RefreshTokenResponse.swift; sourceTree = SOURCE_ROOT; };
+		AEE2BB1D2AF6086700C29D4D /* String+DataEncoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+DataEncoded.swift"; path = "ChallengeMobileApp/App/Extensions/String+DataEncoded.swift"; sourceTree = SOURCE_ROOT; };
+		AEE2BB1F2AF6389900C29D4D /* Date+ToString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Date+ToString.swift"; path = "ChallengeMobileApp/App/Extensions/Date+ToString.swift"; sourceTree = SOURCE_ROOT; };
+		AEE2BB212AF638C400C29D4D /* String+ToDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "String+ToDate.swift"; path = "ChallengeMobileApp/App/Extensions/String+ToDate.swift"; sourceTree = SOURCE_ROOT; };
+		AEE8C0D22AF57D6E0093964C /* NetworkErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkErrors.swift; path = ChallengeMobileApp/Data/Network/Error/NetworkErrors.swift; sourceTree = SOURCE_ROOT; };
+		AEE8C0D42AF57D860093964C /* NetworkRequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NetworkRequestError.swift; path = ChallengeMobileApp/Data/Network/Error/NetworkRequestError.swift; sourceTree = SOURCE_ROOT; };
+		AEE8C0D82AF57F1C0093964C /* LoginUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginUseCase.swift; path = ChallengeMobileApp/Domain/UseCase/Auth/LoginUseCase.swift; sourceTree = SOURCE_ROOT; };
+		AEE8C0DC2AF583880093964C /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = ChallengeMobileApp/App/Storage/Storage.swift; sourceTree = SOURCE_ROOT; };
+		AEE8C0E12AF5855D0093964C /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthRepository.swift; path = ChallengeMobileApp/Domain/Repository/AuthRepository.swift; sourceTree = SOURCE_ROOT; };
+		AEE8C0E42AF58C650093964C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppCoordinator.swift; path = ChallengeMobileApp/App/Coordinator/AppCoordinator.swift; sourceTree = SOURCE_ROOT; };
+		AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppCoordinatorViewModel.swift; path = ChallengeMobileApp/App/Coordinator/AppCoordinatorViewModel.swift; sourceTree = SOURCE_ROOT; };
+		AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = IsUserLoggedUseCase.swift; path = ChallengeMobileApp/Domain/UseCase/Auth/IsUserLoggedUseCase.swift; sourceTree = SOURCE_ROOT; };
+		AEE8C0ED2AF5B34E0093964C /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Screen.swift; path = ChallengeMobileApp/App/Coordinator/Screen.swift; sourceTree = SOURCE_ROOT; };
+		AEE8C0EF2AF5B7AC0093964C /* AuthAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthAPIServiceTests.swift; path = ChallengeMobileAppTests/AuthAPIServiceTests.swift; sourceTree = SOURCE_ROOT; };
 		AEF700352AF45611003BDFCB /* ChallengeMobileApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChallengeMobileApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeMobileApp.swift; sourceTree = "<group>"; };
-		AEF7003A2AF45611003BDFCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChallengeMobileApp.swift; path = ChallengeMobileApp/App/ChallengeMobileApp.swift; sourceTree = SOURCE_ROOT; };
+		AEF7003A2AF45611003BDFCB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginView.swift; path = ChallengeMobileApp/Presentation/Features/Login/LoginView.swift; sourceTree = SOURCE_ROOT; };
 		AEF7003C2AF45614003BDFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		AEF7003F2AF45614003BDFCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		AEF7003F2AF45614003BDFCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "ChallengeMobileApp/Preview Content/Preview Assets.xcassets"; sourceTree = SOURCE_ROOT; };
 		AEF700452AF45615003BDFCB /* ChallengeMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1A45ADF7EF899C65D0F2D5 /* Pods-ChallengeMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileApp.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,22 +215,36 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AE276E7C2AF951D000A12EA5 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				AE276E7E2AF9521400A12EA5 /* Injector.swift */,
+				AE276E7D2AF9521400A12EA5 /* RepositoryAssambly.swift */,
+				AE276E7F2AF9521400A12EA5 /* ServiceAssembly.swift */,
+				AE276E802AF9521400A12EA5 /* UseCaseAssembly.swift */,
+			);
+			name = Dependencies;
+			path = ChallengeMobileApp/Dependencies;
+			sourceTree = SOURCE_ROOT;
+		};
 		AE4CD60C2AF4A52D001246BF /* NeuzeitSLTStd */ = {
 			isa = PBXGroup;
 			children = (
 				AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */,
 				AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */,
 			);
-			path = NeuzeitSLTStd;
-			sourceTree = "<group>";
+			name = NeuzeitSLTStd;
+			path = ChallengeMobileApp/SupportingFiles/Fonts/NeuzeitSLTStd;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE50D5FC2AF83BFF005E09B1 /* Survey */ = {
 			isa = PBXGroup;
 			children = (
 				AE50D5FD2AF83C18005E09B1 /* GetSurveysUseCase.swift */,
 			);
-			path = Survey;
-			sourceTree = "<group>";
+			name = Survey;
+			path = ChallengeMobileApp/Domain/UseCase/Survey;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE50D6072AF86591005E09B1 /* ForgotPassword */ = {
 			isa = PBXGroup;
@@ -230,8 +252,9 @@
 				AE50D6082AF865E7005E09B1 /* ForgotPasswordView.swift */,
 				AEBE12672AF8C6A100BB549D /* ForgotPasswordViewModel.swift */,
 			);
-			path = ForgotPassword;
-			sourceTree = "<group>";
+			name = ForgotPassword;
+			path = ChallengeMobileApp/Presentation/Features/ForgotPassword;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE5592902AF5589F005C4515 /* Response */ = {
 			isa = PBXGroup;
@@ -243,8 +266,9 @@
 				AE50D5F62AF83429005E09B1 /* SurveyListResponse.swift */,
 				AEBE12632AF8C50200BB549D /* ForgotPasswordResponse.swift */,
 			);
-			path = Response;
-			sourceTree = "<group>";
+			name = Response;
+			path = ChallengeMobileApp/Data/Network/Response;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE5592932AF558FC005C4515 /* Request */ = {
 			isa = PBXGroup;
@@ -254,8 +278,9 @@
 				AE98691A2AF6BABE00C79CD3 /* LogoutRequest.swift */,
 				AEBE12612AF8C40000BB549D /* ForgotPasswordRequest.swift */,
 			);
-			path = Request;
-			sourceTree = "<group>";
+			name = Request;
+			path = ChallengeMobileApp/Data/Network/Request;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE5592962AF559C6005C4515 /* Domain */ = {
 			isa = PBXGroup;
@@ -264,8 +289,9 @@
 				AEE8C0D62AF57EF50093964C /* UseCase */,
 				AE5592972AF559CE005C4515 /* Entities */,
 			);
-			path = Domain;
-			sourceTree = "<group>";
+			name = Domain;
+			path = ChallengeMobileApp/Domain;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE5592972AF559CE005C4515 /* Entities */ = {
 			isa = PBXGroup;
@@ -274,8 +300,9 @@
 				AE98692B2AF6C6D200C79CD3 /* UserProfile.swift */,
 				AE50D5FA2AF8353E005E09B1 /* SurveyItemList.swift */,
 			);
-			path = Entities;
-			sourceTree = "<group>";
+			name = Entities;
+			path = ChallengeMobileApp/Domain/Entities;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE9080F32AF48F7C008EABC4 /* SupportingFiles */ = {
 			isa = PBXGroup;
@@ -286,8 +313,9 @@
 				AE4CD61B2AF4ACEE001246BF /* Localizable.strings */,
 				AE9080F82AF49118008EABC4 /* L10n.swift */,
 			);
-			path = SupportingFiles;
-			sourceTree = "<group>";
+			name = SupportingFiles;
+			path = ChallengeMobileApp/SupportingFiles;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE9080F42AF48F97008EABC4 /* Resources */ = {
 			isa = PBXGroup;
@@ -295,32 +323,36 @@
 				AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */,
 				AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */,
 			);
-			path = Resources;
-			sourceTree = "<group>";
+			name = Resources;
+			path = ChallengeMobileApp/SupportingFiles/Resources;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE9080F52AF48FBA008EABC4 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
 				AE4CD60C2AF4A52D001246BF /* NeuzeitSLTStd */,
 			);
-			path = Fonts;
-			sourceTree = "<group>";
+			name = Fonts;
+			path = ChallengeMobileApp/SupportingFiles/Fonts;
+			sourceTree = SOURCE_ROOT;
 		};
 		AE9869262AF6C55200C79CD3 /* User */ = {
 			isa = PBXGroup;
 			children = (
 				AE9869272AF6C57600C79CD3 /* GetProfileUseCase.swift */,
 			);
-			path = User;
-			sourceTree = "<group>";
+			name = User;
+			path = ChallengeMobileApp/Domain/UseCase/User;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEBE12532AF86D2600BB549D /* Survey */ = {
 			isa = PBXGroup;
 			children = (
 				AEBE12542AF86D3700BB549D /* SurveyView.swift */,
 			);
-			path = Survey;
-			sourceTree = "<group>";
+			name = Survey;
+			path = ChallengeMobileApp/Presentation/Features/Survey;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEBE12582AF8729F00BB549D /* Storage */ = {
 			isa = PBXGroup;
@@ -328,8 +360,9 @@
 				AEE8C0DC2AF583880093964C /* Storage.swift */,
 				AEBE12562AF8729A00BB549D /* SurveyStorage.swift */,
 			);
-			path = Storage;
-			sourceTree = "<group>";
+			name = Storage;
+			path = ChallengeMobileApp/App/Storage;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEC5991E2AF47E070099DDE9 /* App */ = {
 			isa = PBXGroup;
@@ -340,8 +373,9 @@
 				AEC599282AF47F530099DDE9 /* Utilities */,
 				AEC599272AF47F4C0099DDE9 /* Extensions */,
 			);
-			path = App;
-			sourceTree = "<group>";
+			name = App;
+			path = ChallengeMobileApp/App;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEC599212AF47E420099DDE9 /* Service */ = {
 			isa = PBXGroup;
@@ -350,8 +384,9 @@
 				AE9869222AF6C3B400C79CD3 /* UserApi.swift */,
 				AE50D5F42AF83414005E09B1 /* SurveyApi.swift */,
 			);
-			path = Service;
-			sourceTree = "<group>";
+			name = Service;
+			path = ChallengeMobileApp/Data/Network/Service;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEC599242AF47ED70099DDE9 /* Presentation */ = {
 			isa = PBXGroup;
@@ -359,8 +394,9 @@
 				AEC599262AF47EF50099DDE9 /* Features */,
 				AEC599252AF47EE30099DDE9 /* Components */,
 			);
-			path = Presentation;
-			sourceTree = "<group>";
+			name = Presentation;
+			path = ChallengeMobileApp/Presentation;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEC599252AF47EE30099DDE9 /* Components */ = {
 			isa = PBXGroup;
@@ -372,8 +408,9 @@
 				AE50D6012AF84456005E09B1 /* Shimmer.swift */,
 				AEBE12592AF8942600BB549D /* BackgroundView.swift */,
 			);
-			path = Components;
-			sourceTree = "<group>";
+			name = Components;
+			path = ChallengeMobileApp/Presentation/Components;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEC599262AF47EF50099DDE9 /* Features */ = {
 			isa = PBXGroup;
@@ -383,8 +420,9 @@
 				AEC599302AF480660099DDE9 /* Login */,
 				AEC5992F2AF480600099DDE9 /* Home */,
 			);
-			path = Features;
-			sourceTree = "<group>";
+			name = Features;
+			path = ChallengeMobileApp/Presentation/Features;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEC599272AF47F4C0099DDE9 /* Extensions */ = {
 			isa = PBXGroup;
@@ -396,16 +434,18 @@
 				AE50D6052AF84D4E005E09B1 /* View+IsHidden.swift */,
 				AEBE125B2AF8A5E100BB549D /* View+SwipeGesture.swift */,
 			);
-			path = Extensions;
-			sourceTree = "<group>";
+			name = Extensions;
+			path = ChallengeMobileApp/App/Extensions;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEC599282AF47F530099DDE9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				AEC5992D2AF47FDE0099DDE9 /* K.swift */,
 			);
-			path = Utilities;
-			sourceTree = "<group>";
+			name = Utilities;
+			path = ChallengeMobileApp/App/Utilities;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEC5992F2AF480600099DDE9 /* Home */ = {
 			isa = PBXGroup;
@@ -414,8 +454,9 @@
 				AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */,
 				AE50D5F02AF81BBA005E09B1 /* HomeContentView.swift */,
 			);
-			path = Home;
-			sourceTree = "<group>";
+			name = Home;
+			path = ChallengeMobileApp/Presentation/Features/Home;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEC599302AF480660099DDE9 /* Login */ = {
 			isa = PBXGroup;
@@ -423,8 +464,9 @@
 				AEF7003A2AF45611003BDFCB /* LoginView.swift */,
 				AEC599332AF480970099DDE9 /* LoginViewModel.swift */,
 			);
-			path = Login;
-			sourceTree = "<group>";
+			name = Login;
+			path = ChallengeMobileApp/Presentation/Features/Login;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEE8C0D12AF57D590093964C /* Error */ = {
 			isa = PBXGroup;
@@ -432,8 +474,9 @@
 				AEE8C0D22AF57D6E0093964C /* NetworkErrors.swift */,
 				AEE8C0D42AF57D860093964C /* NetworkRequestError.swift */,
 			);
-			path = Error;
-			sourceTree = "<group>";
+			name = Error;
+			path = ChallengeMobileApp/Data/Network/Error;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEE8C0D62AF57EF50093964C /* UseCase */ = {
 			isa = PBXGroup;
@@ -442,8 +485,9 @@
 				AE9869262AF6C55200C79CD3 /* User */,
 				AEE8C0D72AF57F0E0093964C /* Auth */,
 			);
-			path = UseCase;
-			sourceTree = "<group>";
+			name = UseCase;
+			path = ChallengeMobileApp/Domain/UseCase;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEE8C0D72AF57F0E0093964C /* Auth */ = {
 			isa = PBXGroup;
@@ -454,16 +498,18 @@
 				AE98691C2AF6BC7B00C79CD3 /* LogoutUseCase.swift */,
 				AEBE12652AF8C55800BB549D /* ForgotPasswordUseCase.swift */,
 			);
-			path = Auth;
-			sourceTree = "<group>";
+			name = Auth;
+			path = ChallengeMobileApp/Domain/UseCase/Auth;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEE8C0DA2AF583020093964C /* Data */ = {
 			isa = PBXGroup;
 			children = (
 				AEE8C0DB2AF583730093964C /* Network */,
 			);
-			path = Data;
-			sourceTree = "<group>";
+			name = Data;
+			path = ChallengeMobileApp/Data;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEE8C0DB2AF583730093964C /* Network */ = {
 			isa = PBXGroup;
@@ -474,8 +520,9 @@
 				AEE8C0D12AF57D590093964C /* Error */,
 				AE5592902AF5589F005C4515 /* Response */,
 			);
-			path = Network;
-			sourceTree = "<group>";
+			name = Network;
+			path = ChallengeMobileApp/Data/Network;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEE8C0DE2AF5852F0093964C /* Repository */ = {
 			isa = PBXGroup;
@@ -484,8 +531,9 @@
 				AE9869242AF6C51300C79CD3 /* UserRepository.swift */,
 				AE50D5F82AF834CA005E09B1 /* SurveyRepository.swift */,
 			);
-			path = Repository;
-			sourceTree = "<group>";
+			name = Repository;
+			path = ChallengeMobileApp/Domain/Repository;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEE8C0E32AF585F40093964C /* Repository */ = {
 			isa = PBXGroup;
@@ -494,8 +542,9 @@
 				AE9869202AF6C36200C79CD3 /* UserRepositoryImpl.swift */,
 				AE50D5F22AF833EC005E09B1 /* SurveyRepositoryImpl.swift */,
 			);
-			path = Repository;
-			sourceTree = "<group>";
+			name = Repository;
+			path = ChallengeMobileApp/Data/Network/Repository;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEE8C0EC2AF5B3300093964C /* Coordinator */ = {
 			isa = PBXGroup;
@@ -504,8 +553,9 @@
 				AEE8C0E42AF58C650093964C /* AppCoordinator.swift */,
 				AEE8C0ED2AF5B34E0093964C /* Screen.swift */,
 			);
-			path = Coordinator;
-			sourceTree = "<group>";
+			name = Coordinator;
+			path = ChallengeMobileApp/App/Coordinator;
+			sourceTree = SOURCE_ROOT;
 		};
 		AEF7002C2AF45611003BDFCB = {
 			isa = PBXGroup;
@@ -525,11 +575,12 @@
 				AEF700452AF45615003BDFCB /* ChallengeMobileAppTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		AEF700372AF45611003BDFCB /* ChallengeMobileApp */ = {
 			isa = PBXGroup;
 			children = (
+				AE276E7C2AF951D000A12EA5 /* Dependencies */,
 				AEE8C0DA2AF583020093964C /* Data */,
 				AE5592962AF559C6005C4515 /* Domain */,
 				AE4CD6112AF4A7CA001246BF /* Info.plist */,
@@ -539,15 +590,16 @@
 				AEF7003E2AF45614003BDFCB /* Preview Content */,
 			);
 			path = ChallengeMobileApp;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 		AEF7003E2AF45614003BDFCB /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
 				AEF7003F2AF45614003BDFCB /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
-			sourceTree = "<group>";
+			name = "Preview Content";
+			path = "ChallengeMobileApp/Preview Content";
+			sourceTree = SOURCE_ROOT;
 		};
 		AEF700482AF45615003BDFCB /* ChallengeMobileAppTests */ = {
 			isa = PBXGroup;
@@ -555,7 +607,7 @@
 				AEE8C0EF2AF5B7AC0093964C /* AuthAPIServiceTests.swift */,
 			);
 			path = ChallengeMobileAppTests;
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -745,7 +797,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE276E842AF9521400A12EA5 /* UseCaseAssembly.swift in Sources */,
 				AE9869212AF6C36200C79CD3 /* UserRepositoryImpl.swift in Sources */,
+				AE276E832AF9521400A12EA5 /* ServiceAssembly.swift in Sources */,
+				AE276E812AF9521400A12EA5 /* RepositoryAssambly.swift in Sources */,
 				AE9869232AF6C3B400C79CD3 /* UserApi.swift in Sources */,
 				AE98691F2AF6BEC100C79CD3 /* LogoutResponse.swift in Sources */,
 				AEC599322AF480860099DDE9 /* HomeView.swift in Sources */,
@@ -784,6 +839,7 @@
 				AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */,
 				AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */,
 				AE50D6002AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift in Sources */,
+				AE276E822AF9521400A12EA5 /* Injector.swift in Sources */,
 				AEE2BB222AF638C400C29D4D /* String+ToDate.swift in Sources */,
 				AEE2BB1C2AF6079700C29D4D /* RefreshTokenResponse.swift in Sources */,
 				AE50D5F72AF83429005E09B1 /* SurveyListResponse.swift in Sources */,
@@ -834,7 +890,8 @@
 				AE4CD61A2AF4ACEE001246BF /* en */,
 			);
 			name = Localizable.strings;
-			sourceTree = "<group>";
+			path = ChallengeMobileApp/SupportingFiles;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXVariantGroup section */
 
