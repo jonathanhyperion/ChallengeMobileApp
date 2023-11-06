@@ -17,9 +17,11 @@ struct AppCoordinator: View {
                     case .home:
                         HomeView(goToLogin: viewModel.goToLogin, goToSurvey: viewModel.goToSurvey)
                     case .login:
-                        LoginView(pushHome: viewModel.goToHome)
+                        LoginView(pushHome: viewModel.goToHome, pushForgotPassword: viewModel.goToForgotPassword)
                     case .survey:
                         SurveyView(goToBack: viewModel.goBack)
+                    case .forgotPassword:
+                        ForgotPasswordView(goToBack: viewModel.goBack)
                     }
                 }
             }

@@ -10,3 +10,5 @@
 "forgotPassword" = "Forgot?";
 "login" = "Log in";
 "today" = "Today";
+"enterEmailReset" = "Enter your email to receive instructions for resetting your password.";
+"reset" = "Reset";

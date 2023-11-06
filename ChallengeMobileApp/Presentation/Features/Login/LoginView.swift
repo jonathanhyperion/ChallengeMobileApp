@@ -9,6 +9,7 @@ struct LoginView: View {
     @StateObject var viewModel: LoginViewModel = .make()
     @State private var keyboardHeight: CGFloat = 0.0
     let pushHome: () -> Void
+    let pushForgotPassword: () -> Void
     
     var body: some View {
         GeometryReader { reader in
@@ -35,7 +36,8 @@ struct LoginView: View {
                                 backgroundColor: .white,
                                 foregroundColor: .black,
                                 cornerRadius: 10.0,
-                                isPassword: false
+                                isPassword: false,
+                                pushNext: {}
                             )
                             .frame(
                                 width: reader.size.width * 0.90,
@@ -48,7 +50,10 @@ struct LoginView: View {
                                 backgroundColor: .white,
                                 foregroundColor: .black,
                                 cornerRadius: 10,
-                                isPassword: true
+                                isPassword: true,
+                                pushNext: {
+                                    pushForgotPassword()
+                                }
                             )
                             .frame(
                                 width: reader.size.width * 0.90,
@@ -96,55 +101,8 @@ struct LoginView: View {
     }
 }
 
-struct BackgroundView: View {
-    var reader: CGSize
-    
-    var body: some View {
-        ZStack {
-            Asset.background.swiftUIImage
-                .resizable()
-                .scaledToFill()
-                .frame(
-                    width: reader.width,
-                    height: reader.height
-                )
-                .overlay {
-                    Rectangle()
-                    .foregroundColor(.clear)
-                    .frame(
-                        width: reader.width,
-                        height: reader.height
-                    )
-                    .background(
-                        LinearGradient(
-                            gradient: Gradient(stops: [
-                                Gradient.Stop(color: .clear, location: 0.3),
-                                Gradient.Stop(color: .black, location: 0.55),
-                                Gradient.Stop(color: .black, location: 1.0)
-                            ]),
-                            startPoint: UnitPoint(x: 0.0, y: 0.0),
-                            endPoint: UnitPoint(x: 0.0, y: 1.0)
-                        )
-                    )
-                }
-            Rectangle()
-                .foregroundColor(.clear)
-                .frame(
-                    width: reader.width,
-                    height: reader.height
-                )
-                .background(
-                    VisualEffectBlur(
-                        blurStyle: .systemChromeMaterialDark,
-                        vibrancyStyle: .fill
-                    )
-                )
-        }
-    }
-}
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView(pushHome: {})
+        LoginView(pushHome: {}, pushForgotPassword: {})
     }
 }
