@@ -12,6 +12,7 @@
 		AE4CD60E2AF4A562001246BF /* NeuzeitSLTStdBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD60D2AF4A562001246BF /* NeuzeitSLTStdBook.otf */; };
 		AE4CD6102AF4A5C2001246BF /* NeuzeitSLTStdBookHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */; };
 		AE4CD6192AF4ACEE001246BF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD61B2AF4ACEE001246BF /* Localizable.strings */; };
+		AE50D6092AF865E7005E09B1 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D6082AF865E7005E09B1 /* ForgotPasswordView.swift */; };
 		AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592912AF558BE005C4515 /* LoginResponse.swift */; };
 		AE5592952AF55917005C4515 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592942AF55917005C4515 /* LoginRequest.swift */; };
 		AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592982AF55AC7005C4515 /* AccessToken.swift */; };
@@ -89,6 +90,7 @@
 		AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = NeuzeitSLTStdBookHeavy.otf; sourceTree = "<group>"; };
 		AE4CD6112AF4A7CA001246BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AE4CD61A2AF4ACEE001246BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AE50D6082AF865E7005E09B1 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		AE5592912AF558BE005C4515 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		AE5592942AF55917005C4515 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		AE5592982AF55AC7005C4515 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
@@ -195,6 +197,14 @@
 				AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */,
 			);
 			path = NeuzeitSLTStd;
+			sourceTree = "<group>";
+		};
+		AE50D6072AF86591005E09B1 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				AE50D6082AF865E7005E09B1 /* ForgotPasswordView.swift */,
+			);
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 		AE5592902AF5589F005C4515 /* Response */ = {
@@ -325,6 +335,7 @@
 		AEC599262AF47EF50099DDE9 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AE50D6072AF86591005E09B1 /* ForgotPassword */,
 				AEC599302AF480660099DDE9 /* Login */,
 				AEC5992F2AF480600099DDE9 /* Home */,
 			);
@@ -759,6 +770,7 @@
 				AEE8C0D32AF57D6E0093964C /* NetworkErrors.swift in Sources */,
 				AE2CF3312AF4872B0095C63B /* Optional+Unwrap.swift in Sources */,
 				AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */,
+				AE50D6092AF865E7005E09B1 /* ForgotPasswordView.swift in Sources */,
 				AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
