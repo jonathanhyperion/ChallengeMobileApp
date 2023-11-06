@@ -47,6 +47,10 @@
 		AEBE12572AF8729A00BB549D /* SurveyStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12562AF8729A00BB549D /* SurveyStorage.swift */; };
 		AEBE125A2AF8942600BB549D /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12592AF8942600BB549D /* BackgroundView.swift */; };
 		AEBE125C2AF8A5E100BB549D /* View+SwipeGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE125B2AF8A5E100BB549D /* View+SwipeGesture.swift */; };
+		AEBE12622AF8C40000BB549D /* ForgotPasswordRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12612AF8C40000BB549D /* ForgotPasswordRequest.swift */; };
+		AEBE12642AF8C50200BB549D /* ForgotPasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12632AF8C50200BB549D /* ForgotPasswordResponse.swift */; };
+		AEBE12662AF8C55800BB549D /* ForgotPasswordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12652AF8C55800BB549D /* ForgotPasswordUseCase.swift */; };
+		AEBE12682AF8C6A100BB549D /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12672AF8C6A100BB549D /* ForgotPasswordViewModel.swift */; };
 		AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599292AF47F720099DDE9 /* Injector.swift */; };
 		AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */; };
 		AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992D2AF47FDE0099DDE9 /* K.swift */; };
@@ -141,6 +145,10 @@
 		AEBE12562AF8729A00BB549D /* SurveyStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyStorage.swift; sourceTree = "<group>"; };
 		AEBE12592AF8942600BB549D /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		AEBE125B2AF8A5E100BB549D /* View+SwipeGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SwipeGesture.swift"; sourceTree = "<group>"; };
+		AEBE12612AF8C40000BB549D /* ForgotPasswordRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordRequest.swift; sourceTree = "<group>"; };
+		AEBE12632AF8C50200BB549D /* ForgotPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordResponse.swift; sourceTree = "<group>"; };
+		AEBE12652AF8C55800BB549D /* ForgotPasswordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordUseCase.swift; sourceTree = "<group>"; };
+		AEBE12672AF8C6A100BB549D /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
 		AEC599292AF47F720099DDE9 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		AEC5992D2AF47FDE0099DDE9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
@@ -243,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				AE50D6082AF865E7005E09B1 /* ForgotPasswordView.swift */,
+				AEBE12672AF8C6A100BB549D /* ForgotPasswordViewModel.swift */,
 			);
 			path = ForgotPassword;
 			sourceTree = "<group>";
@@ -255,6 +264,7 @@
 				AE98691E2AF6BEC100C79CD3 /* LogoutResponse.swift */,
 				AE9869292AF6C65C00C79CD3 /* GetUserResponse.swift */,
 				AE50D5F62AF83429005E09B1 /* SurveyListResponse.swift */,
+				AEBE12632AF8C50200BB549D /* ForgotPasswordResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -265,6 +275,7 @@
 				AE5592942AF55917005C4515 /* LoginRequest.swift */,
 				AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */,
 				AE98691A2AF6BABE00C79CD3 /* LogoutRequest.swift */,
+				AEBE12612AF8C40000BB549D /* ForgotPasswordRequest.swift */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -475,6 +486,7 @@
 				AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */,
 				AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */,
 				AE98691C2AF6BC7B00C79CD3 /* LogoutUseCase.swift */,
+				AEBE12652AF8C55800BB549D /* ForgotPasswordUseCase.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -805,6 +817,7 @@
 				AEC599322AF480860099DDE9 /* HomeView.swift in Sources */,
 				AE98691B2AF6BABE00C79CD3 /* LogoutRequest.swift in Sources */,
 				AEAFFDFA2AF4E9D400E7B5D0 /* Fonts.swift in Sources */,
+				AEBE12682AF8C6A100BB549D /* ForgotPasswordViewModel.swift in Sources */,
 				AEE8C0E52AF58C650093964C /* AppCoordinator.swift in Sources */,
 				AE5592952AF55917005C4515 /* LoginRequest.swift in Sources */,
 				AEE8C0E22AF5855D0093964C /* AuthRepository.swift in Sources */,
@@ -834,6 +847,7 @@
 				AE50D5F92AF834CA005E09B1 /* SurveyRepository.swift in Sources */,
 				AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */,
 				AE98691D2AF6BC7B00C79CD3 /* LogoutUseCase.swift in Sources */,
+				AEBE12662AF8C55800BB549D /* ForgotPasswordUseCase.swift in Sources */,
 				AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */,
 				AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */,
 				AE50D6002AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift in Sources */,
@@ -852,6 +866,7 @@
 				AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */,
 				AEE2BB202AF6389900C29D4D /* Date+ToString.swift in Sources */,
 				AE9080F92AF49118008EABC4 /* L10n.swift in Sources */,
+				AEBE12642AF8C50200BB549D /* ForgotPasswordResponse.swift in Sources */,
 				AEE8C0D92AF57F1C0093964C /* LoginUseCase.swift in Sources */,
 				AEE8C0D32AF57D6E0093964C /* NetworkErrors.swift in Sources */,
 				AE2CF3312AF4872B0095C63B /* Optional+Unwrap.swift in Sources */,
@@ -860,6 +875,7 @@
 				AE50D6092AF865E7005E09B1 /* ForgotPasswordView.swift in Sources */,
 				AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */,
 				AEBE12552AF86D3700BB549D /* SurveyView.swift in Sources */,
+				AEBE12622AF8C40000BB549D /* ForgotPasswordRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

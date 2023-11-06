@@ -1,28 +1,25 @@
 //
-//  LoginViewModel.swift
+//  ForgotPasswordViewModel.swift
 //  ChallengeMobileApp
 //
 
 import Foundation
 import Combine
 
-final class LoginViewModel: ObservableObject {
+final class ForgotPasswordViewModel: ObservableObject {
     @Published var email = ""
-    @Published var password = ""
-    @Published private(set) var validCredentials: Bool = false
     
-    private let loginUseCase: LoginUseCase
+    private let forgotPasswordUseCase: ForgotPasswordUseCase
     private var cancellable = Set<AnyCancellable>()
     
-    init(loginUseCase: LoginUseCase) {
-        self.loginUseCase = loginUseCase
+    init(forgotPasswordUseCase: ForgotPasswordUseCase) {
+        self.forgotPasswordUseCase = forgotPasswordUseCase
     }
     
-    func login() {
-        loginUseCase.login(params: LoginRequest(
-                grantType: "password",
-                email: email,
-                password: password,
+    func sendEmailForgotPassword() {
+        forgotPasswordUseCase.forgotPassword(
+            params: ForgotPasswordRequest(
+                user: User(email: email),
                 clientID: K.clientID,
                 clientSecret: K.clientSecret
             )
@@ -39,15 +36,13 @@ final class LoginViewModel: ObservableObject {
             case .finished:
                 break
             }
-        }, receiveValue: { [weak self] _ in
-            self?.validCredentials = true
-        })
+        }, receiveValue: { [weak self] _ in })
         .store(in: &cancellable)
     }
 }
 
-extension LoginViewModel {
-    static func make() -> LoginViewModel {
-        LoginViewModel(loginUseCase: Injector.resolve(LoginUseCase.self))
+extension ForgotPasswordViewModel {
+    static func make() -> ForgotPasswordViewModel {
+        ForgotPasswordViewModel(forgotPasswordUseCase: Injector.resolve(ForgotPasswordUseCase.self))
     }
 }

@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct ForgotPasswordView: View {
+    @StateObject var viewModel: ForgotPasswordViewModel = .make()
     
     @State var email = ""
     
@@ -56,7 +57,7 @@ struct ForgotPasswordView: View {
                             VStack(spacing: 28.0) {
                                 
                                 CustomTextField(
-                                    text: $email,
+                                    text: $viewModel.email,
                                     placeholder: L10n.email,
                                     backgroundColor: .white,
                                     foregroundColor: .black,
@@ -71,7 +72,8 @@ struct ForgotPasswordView: View {
                                 
                                 Button(
                                     action: {
-                                        
+                                        viewModel.sendEmailForgotPassword()
+                                        goToBack()
                                     }
                                 ) {
                                     VStack(alignment: .center) {

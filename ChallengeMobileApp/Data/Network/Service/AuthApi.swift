@@ -11,6 +11,7 @@ enum AuthApi {
     case login(params: LoginRequest)
     case refreshToken(params: RefreshTokenRequest)
     case logout(params: LogoutRequest)
+    case forgotPassword(params: ForgotPasswordRequest)
 }
 
 extension AuthApi: TargetType {
@@ -29,6 +30,8 @@ extension AuthApi: TargetType {
             return "/oauth/token"
         case .logout:
             return "/oauth/revoke"
+        case .forgotPassword:
+            return "/passwords"
         }
     }
     
@@ -40,6 +43,8 @@ extension AuthApi: TargetType {
             return .post
         case .logout:
             return .post
+        case .forgotPassword:
+            return .post
         }
     }
 
@@ -50,6 +55,8 @@ extension AuthApi: TargetType {
         case let .refreshToken(params):
             return .requestCustomJSONEncodable(params, encoder: JSONEncoder())
         case let .logout(params):
+            return .requestCustomJSONEncodable(params, encoder: JSONEncoder())
+        case let .forgotPassword(params):
             return .requestCustomJSONEncodable(params, encoder: JSONEncoder())
         }
     }
@@ -99,6 +106,22 @@ extension AuthApi: TargetType {
             """.dataEncoded
         case .logout:
             data = "OK".dataEncoded
+        case .forgotPassword:
+            data = """
+            {
+                "data": {
+                    "id": "123",
+                    "type": "token",
+                    "attributes": {
+                        "access_token": "123-f2i0CG6MDsf-wJE9FyYrhSGAOtxBkhYWDI",
+                        "token_type": "Bearer",
+                        "expires_in": 7200,
+                        "refresh_token": "l27GNT0kmkPbnEaUxniXyu4cHfPyWFr00kZTX5oWKA6c",
+                        "created_at": 1681974651
+                    }
+                }
+            }
+            """.dataEncoded
         }
         return data
     }
