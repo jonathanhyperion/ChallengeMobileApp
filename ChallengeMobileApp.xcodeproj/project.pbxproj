@@ -55,10 +55,6 @@
 		AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599332AF480970099DDE9 /* LoginViewModel.swift */; };
 		AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */; };
 		AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599372AF483E20099DDE9 /* AuthApi.swift */; };
-		AED133102AF94B2800994A68 /* RepositoryAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1330C2AF94B2700994A68 /* RepositoryAssambly.swift */; };
-		AED133112AF94B2800994A68 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1330D2AF94B2800994A68 /* ServiceAssembly.swift */; };
-		AED133122AF94B2800994A68 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1330E2AF94B2800994A68 /* Injector.swift */; };
-		AED133132AF94B2800994A68 /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1330F2AF94B2800994A68 /* UseCaseAssembly.swift */; };
 		AEE2BB182AF6042C00C29D4D /* RefreshTokenUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */; };
 		AEE2BB1A2AF606E100C29D4D /* RefreshTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */; };
 		AEE2BB1C2AF6079700C29D4D /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */; };
@@ -146,10 +142,6 @@
 		AEC599332AF480970099DDE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		AEC599372AF483E20099DDE9 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
-		AED1330C2AF94B2700994A68 /* RepositoryAssambly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryAssambly.swift; sourceTree = "<group>"; };
-		AED1330D2AF94B2800994A68 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
-		AED1330E2AF94B2800994A68 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
-		AED1330F2AF94B2800994A68 /* UseCaseAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
 		AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenUseCase.swift; sourceTree = "<group>"; };
 		AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenRequest.swift; sourceTree = "<group>"; };
 		AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
@@ -434,17 +426,6 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		AED1330B2AF94B0B00994A68 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				AED1330E2AF94B2800994A68 /* Injector.swift */,
-				AED1330C2AF94B2700994A68 /* RepositoryAssambly.swift */,
-				AED1330D2AF94B2800994A68 /* ServiceAssembly.swift */,
-				AED1330F2AF94B2800994A68 /* UseCaseAssembly.swift */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
 		AEE8C0D12AF57D590093964C /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -549,7 +530,6 @@
 		AEF700372AF45611003BDFCB /* ChallengeMobileApp */ = {
 			isa = PBXGroup;
 			children = (
-				AED1330B2AF94B0B00994A68 /* Dependencies */,
 				AEE8C0DA2AF583020093964C /* Data */,
 				AE5592962AF559C6005C4515 /* Domain */,
 				AE4CD6112AF4A7CA001246BF /* Info.plist */,
@@ -765,11 +745,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AED133132AF94B2800994A68 /* UseCaseAssembly.swift in Sources */,
 				AE9869212AF6C36200C79CD3 /* UserRepositoryImpl.swift in Sources */,
-				AED133102AF94B2800994A68 /* RepositoryAssambly.swift in Sources */,
 				AE9869232AF6C3B400C79CD3 /* UserApi.swift in Sources */,
-				AED133112AF94B2800994A68 /* ServiceAssembly.swift in Sources */,
 				AE98691F2AF6BEC100C79CD3 /* LogoutResponse.swift in Sources */,
 				AEC599322AF480860099DDE9 /* HomeView.swift in Sources */,
 				AE98691B2AF6BABE00C79CD3 /* LogoutRequest.swift in Sources */,
@@ -805,7 +782,6 @@
 				AE98691D2AF6BC7B00C79CD3 /* LogoutUseCase.swift in Sources */,
 				AEBE12662AF8C55800BB549D /* ForgotPasswordUseCase.swift in Sources */,
 				AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */,
-				AED133122AF94B2800994A68 /* Injector.swift in Sources */,
 				AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */,
 				AE50D6002AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift in Sources */,
 				AEE2BB222AF638C400C29D4D /* String+ToDate.swift in Sources */,
