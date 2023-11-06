@@ -10,11 +10,12 @@ struct HomeView: View {
     @State private var isMenuOpen = false
     
     var goToLogin: () -> Void
+    var goToSurvey: () -> Void
     
     var body: some View {
         GeometryReader { reader in
             ZStack {
-                HomeContetView(viewModel: viewModel, isMenuOpen: $isMenuOpen, reader: reader.size)
+                HomeContetView(viewModel: viewModel, isMenuOpen: $isMenuOpen, reader: reader.size, goToSurvey: goToSurvey)
                 
                 if isMenuOpen {
                     Color.black.opacity(0.4).onTapGesture {
@@ -49,6 +50,6 @@ struct HomeView: View {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeView(goToLogin: {})
+        HomeView(goToLogin: {}, goToSurvey: {})
     }
 }

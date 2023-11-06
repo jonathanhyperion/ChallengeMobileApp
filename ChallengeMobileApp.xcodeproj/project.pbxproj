@@ -42,6 +42,8 @@
 		AEAFFDFA2AF4E9D400E7B5D0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */; };
 		AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */; };
 		AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */; };
+		AEBE12552AF86D3700BB549D /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12542AF86D3700BB549D /* SurveyView.swift */; };
+		AEBE12572AF8729A00BB549D /* SurveyEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12562AF8729A00BB549D /* SurveyEnviroment.swift */; };
 		AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599292AF47F720099DDE9 /* Injector.swift */; };
 		AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */; };
 		AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992D2AF47FDE0099DDE9 /* K.swift */; };
@@ -131,6 +133,8 @@
 		AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		AEBE12542AF86D3700BB549D /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
+		AEBE12562AF8729A00BB549D /* SurveyEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyEnviroment.swift; sourceTree = "<group>"; };
 		AEC599292AF47F720099DDE9 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		AEC5992D2AF47FDE0099DDE9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
@@ -308,9 +312,26 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		AEBE12532AF86D2600BB549D /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE12542AF86D3700BB549D /* SurveyView.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		AEBE12582AF8729F00BB549D /* Enviroments */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE12562AF8729A00BB549D /* SurveyEnviroment.swift */,
+			);
+			path = Enviroments;
+			sourceTree = "<group>";
+		};
 		AEC5991E2AF47E070099DDE9 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				AEBE12582AF8729F00BB549D /* Enviroments */,
 				AEE8C0EC2AF5B3300093964C /* Coordinator */,
 				AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */,
 				AEC599282AF47F530099DDE9 /* Utilities */,
@@ -364,6 +385,7 @@
 		AEC599262AF47EF50099DDE9 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				AEBE12532AF86D2600BB549D /* Survey */,
 				AEC599302AF480660099DDE9 /* Login */,
 				AEC5992F2AF480600099DDE9 /* Home */,
 			);
@@ -785,6 +807,7 @@
 				AEE2BB1E2AF6086700C29D4D /* String+DataEncoded.swift in Sources */,
 				AE9080F22AF48C64008EABC4 /* AuthRepositoryImpl.swift in Sources */,
 				AE50D5F32AF833EC005E09B1 /* SurveyRepositoryImpl.swift in Sources */,
+				AEBE12572AF8729A00BB549D /* SurveyEnviroment.swift in Sources */,
 				AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */,
 				AEE8C0EE2AF5B34E0093964C /* Screen.swift in Sources */,
 				AEE8C0E72AF58D380093964C /* AppCoordinatorViewModel.swift in Sources */,
@@ -816,6 +839,7 @@
 				AE60678D2AF6E73E009BF21F /* RepositoryAssambly.swift in Sources */,
 				AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */,
 				AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */,
+				AEBE12552AF86D3700BB549D /* SurveyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

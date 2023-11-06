@@ -8,12 +8,15 @@ import Kingfisher
 
 struct HomeContetView: View {
     @ObservedObject var viewModel: HomeViewModel
+    @EnvironmentObject var surveyEnviroment: SurveyEnviroment
     @Binding var isMenuOpen: Bool
     @State private var isLastImage = false
     @State private var title = ""
     @State private var description = ""
+    @State private var indexSurvey = 0
     
     let reader: CGSize
+    var goToSurvey: () -> Void
     
     var body: some View {
         ZStack {
@@ -38,12 +41,15 @@ struct HomeContetView: View {
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .onAppear {
-                    title = viewModel.surveys[0].title
-                    description = viewModel.surveys[0].description
+                    if !Storage.shared.isTokenExpired() {
+                        title = viewModel.surveys[indexSurvey].title
+                        description = viewModel.surveys[indexSurvey].description
+                    }
                 }
                 .onChange(of: viewModel.currentSurveyIndex) { newIndex in
                     title = viewModel.surveys[newIndex].title
                     description = viewModel.surveys[newIndex].description
+                    indexSurvey = viewModel.currentSurveyIndex
                 }
             }
             .isHidden(viewModel.isLoading)
@@ -52,9 +58,11 @@ struct HomeContetView: View {
                 HStack {
                     VStack(alignment: .leading) {
                         Text(viewModel.todayDate().uppercased())
+                            .font(.custom(FontFamily.Neuzeit.book, fixedSize: 13.0))
                             .redactShimmer(condition: viewModel.isLoading)
                         
                         Text(L10n.today.uppercased())
+                            .font(.custom(FontFamily.Neuzeit.heavy, fixedSize: 34.0))
                             .redactShimmer(condition: viewModel.isLoading)
                     }
                     
@@ -89,21 +97,21 @@ struct HomeContetView: View {
                     .redactShimmer(condition: viewModel.isLoading)
                     
                     Text(title)
+                        .font(.custom(FontFamily.Neuzeit.heavy, fixedSize: 28.0))
                         .redactShimmer(condition: viewModel.isLoading)
                     
                     HStack {
                         Text(description)
+                            .font(.custom(FontFamily.Neuzeit.book, fixedSize: 17.0))
                             .redactShimmer(condition: viewModel.isLoading)
                         
                         Spacer()
                         
                         Button(action: {
-                            if self.viewModel.currentSurveyIndex == self.viewModel.surveys.count - 1 {
-                                // TODO: Navigation
-                            } else {
-                                self.viewModel.currentSurveyIndex += 1
-                            }
-                            self.isLastImage = self.viewModel.currentSurveyIndex == self.viewModel.surveys.count - 1
+                            // TODO: Navigation
+                            surveyEnviroment.survey = viewModel.surveys[indexSurvey]
+                            goToSurvey()
+                            
                         }, label: {
                             Asset.nextIcon.swiftUIImage
                                 .resizable()

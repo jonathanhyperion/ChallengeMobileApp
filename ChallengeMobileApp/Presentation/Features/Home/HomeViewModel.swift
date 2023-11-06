@@ -91,7 +91,6 @@ final class HomeViewModel: ObservableObject {
                     }
                 }, receiveValue: { [weak self] surveys in
                     self?.surveys = surveys
-                    print(surveys)
                 })
                 .store(in: &cancellable)
         }
