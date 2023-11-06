@@ -7,7 +7,9 @@ import SwiftUI
 
 struct LoginView: View {
     @StateObject var viewModel: LoginViewModel = .make()
+    
     @State private var keyboardHeight: CGFloat = 0.0
+    
     let pushHome: () -> Void
     let pushForgotPassword: () -> Void
     
@@ -80,6 +82,7 @@ struct LoginView: View {
                         }
                         
                         Spacer()
+                        
                     }
                     .frame(
                         width: reader.size.width,

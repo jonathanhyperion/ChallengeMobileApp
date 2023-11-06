@@ -67,7 +67,11 @@ class AppCoordinatorViewModel: ObservableObject {
         .sink(receiveCompletion: { error in
             switch error {
             case let .failure(error):
-                if let _ = error as? NetworkRequestError {}
+                    if let networkError = error as? NetworkRequestError {
+                        let result: NetworkErrors? = networkError.associatedValue()
+                        if result != nil {}
+                    }
+                    print("❌ Error \(error)")
             case .finished:
                 break
             }

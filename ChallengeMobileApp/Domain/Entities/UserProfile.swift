@@ -5,6 +5,7 @@
 
 import Foundation
 
+// MARK: - UserProfile
 struct UserProfile: Codable {
     let email, name: String?
     let avatarURL: String?

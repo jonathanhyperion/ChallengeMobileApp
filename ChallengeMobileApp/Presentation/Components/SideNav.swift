@@ -7,7 +7,6 @@ import SwiftUI
 import Kingfisher
 
 struct SideNav: View {
-    @EnvironmentObject var surveyEnviroment: SurveyEnviroment
     let reader: CGSize
     let user: UserProfile
     var goToLogin: () -> Void
@@ -37,12 +36,11 @@ struct SideNav: View {
                     
                     Button(
                         action: {
-                            surveyEnviroment.resetValues()
-                            surveyEnviroment.reset()
+                            SurveyStorage.shared.resetValues()
                             LogoutAction()
                             goToLogin()
                         }, label: {
-                            Text("Logout")
+                            Text(L10n.logout)
                                 .font(.custom(FontFamily.Neuzeit.heavy, fixedSize: 20.0))
                                 .kerning(0.38)
                                 .foregroundColor(.white)
@@ -59,10 +57,10 @@ struct SideNav: View {
                     height: reader.height * 0.80
                 )
                 
-                Text("v0.1.0 (1562903885)")
+                Text(L10n.version)
                     .font(.custom(FontFamily.Neuzeit.heavy, fixedSize: 11.0))
                     .kerning(0.07)
-                    .foregroundColor(.white)
+                    .foregroundColor(.gray)
                     .frame(width: 200.0, alignment: .topLeading)
             }
             .frame(

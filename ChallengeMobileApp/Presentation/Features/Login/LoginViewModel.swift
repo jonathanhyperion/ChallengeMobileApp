@@ -38,7 +38,7 @@ final class LoginViewModel: ObservableObject {
                     }
                 }
             case .finished:
-                print("✅ Finish...")
+                break
             }
         }, receiveValue: { [weak self] _ in
             self?.validCredentials = true

@@ -12,3 +12,6 @@
 "today" = "Today";
 "enterEmailReset" = "Enter your email to receive instructions for resetting your password.";
 "reset" = "Reset";
+"logout" = "Logout";
+"version" = "v0.1.0 (1562903885)";
+"startSurvey" = "Start Survey";

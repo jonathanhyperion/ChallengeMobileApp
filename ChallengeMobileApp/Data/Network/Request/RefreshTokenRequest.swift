@@ -5,9 +5,9 @@
 
 import Foundation
 
+// MARK: - RefreshTokenRequest
 struct RefreshTokenRequest: Codable {
-    let grantType, clientID, refreshToken: String
-    let clientSecret: String
+    let grantType, clientID, refreshToken, clientSecret: String
 
     enum CodingKeys: String, CodingKey {
         case grantType = "grant_type"

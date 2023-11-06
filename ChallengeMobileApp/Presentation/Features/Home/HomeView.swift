@@ -7,7 +7,6 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var viewModel: HomeViewModel = .make()
-    @EnvironmentObject var surveyEnviroment: SurveyEnviroment
     
     @State private var isMenuOpen = false
     
@@ -17,7 +16,12 @@ struct HomeView: View {
     var body: some View {
         GeometryReader { reader in
             ZStack {
-                HomeContetView(viewModel: viewModel, isMenuOpen: $isMenuOpen, reader: reader.size, goToSurvey: goToSurvey)
+                HomeContetView(
+                    viewModel: viewModel,
+                    isMenuOpen: $isMenuOpen,
+                    reader: reader.size,
+                    goToSurvey: goToSurvey
+                )
                 
                 if isMenuOpen {
                     Color.black.opacity(0.4).onTapGesture {
@@ -45,12 +49,8 @@ struct HomeView: View {
         }
         .onAppear {
             viewModel.getProfile()
-            viewModel.setup(surveyEnviroment)
             viewModel.getSurveys()
         }
-        .onChange(of: viewModel.surveys, perform: { _ in
-            surveyEnviroment.surveyList = viewModel.surveys
-        })
     }
 }
 

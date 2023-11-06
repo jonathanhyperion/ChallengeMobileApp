@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct ForgotPasswordView: View {
+    
     @State var email = ""
     
     let goToBack: () -> Void
@@ -44,12 +45,12 @@ struct ForgotPasswordView: View {
                             .frame(width: reader.size.width)
                         }
                         
-                        VStack(alignment: .center, spacing: 100.0) {
+                        VStack(alignment: .center, spacing: 50.0) {
                             Text(L10n.enterEmailReset)
                                 .font(.custom(FontFamily.Neuzeit.book, fixedSize: 17.0))
                                 .multilineTextAlignment(.center)
                                 .lineLimit(2)
-                                .foregroundColor(.white)
+                                .foregroundColor(.gray)
                                 .padding()
                             
                             VStack(spacing: 28.0) {
@@ -86,6 +87,9 @@ struct ForgotPasswordView: View {
                                     .cornerRadius(10.0)
                                 }
                             }
+                            .frame(
+                                width: reader.size.width
+                            )
                         }
                         .padding(.vertical, 20.0)
                         

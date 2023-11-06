@@ -20,8 +20,10 @@ struct AppCoordinator: View {
                         LoginView(pushHome: viewModel.goToHome, pushForgotPassword: viewModel.goToForgotPassword)
                     case .survey:
                         SurveyView(goToBack: viewModel.goBack)
+                            .swipeGesture(viewModel.goBack)
                     case .forgotPassword:
                         ForgotPasswordView(goToBack: viewModel.goBack)
+                            .swipeGesture(viewModel.goBack)
                     }
                 }
             }
