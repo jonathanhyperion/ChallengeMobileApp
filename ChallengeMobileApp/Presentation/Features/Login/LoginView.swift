@@ -14,7 +14,7 @@ struct LoginView: View {
         GeometryReader { reader in
             VStack {
                 ZStack {
-                    LoginBackground(reader: reader.size)
+                    BackgroundView(reader: reader.size)
                     
                     VStack {
                         Asset.logoWhite.swiftUIImage
@@ -96,7 +96,7 @@ struct LoginView: View {
     }
 }
 
-struct LoginBackground: View {
+struct BackgroundView: View {
     var reader: CGSize
     
     var body: some View {
