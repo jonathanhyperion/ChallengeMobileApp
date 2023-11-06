@@ -13,9 +13,20 @@
 		AE4CD6102AF4A5C2001246BF /* NeuzeitSLTStdBookHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD60F2AF4A5BC001246BF /* NeuzeitSLTStdBookHeavy.otf */; };
 		AE4CD6192AF4ACEE001246BF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE4CD61B2AF4ACEE001246BF /* Localizable.strings */; };
 		AE50D6092AF865E7005E09B1 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D6082AF865E7005E09B1 /* ForgotPasswordView.swift */; };
+		AE50D5F12AF81BBA005E09B1 /* HomeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5F02AF81BBA005E09B1 /* HomeContentView.swift */; };
+		AE50D5F32AF833EC005E09B1 /* SurveyRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5F22AF833EC005E09B1 /* SurveyRepositoryImpl.swift */; };
+		AE50D5F52AF83414005E09B1 /* SurveyApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5F42AF83414005E09B1 /* SurveyApi.swift */; };
+		AE50D5F72AF83429005E09B1 /* SurveyListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5F62AF83429005E09B1 /* SurveyListResponse.swift */; };
+		AE50D5F92AF834CA005E09B1 /* SurveyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5F82AF834CA005E09B1 /* SurveyRepository.swift */; };
+		AE50D5FB2AF8353E005E09B1 /* SurveyItemList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5FA2AF8353E005E09B1 /* SurveyItemList.swift */; };
+		AE50D5FE2AF83C18005E09B1 /* GetSurveysUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5FD2AF83C18005E09B1 /* GetSurveysUseCase.swift */; };
+		AE50D6002AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D5FF2AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift */; };
+		AE50D6022AF84456005E09B1 /* Shimmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D6012AF84456005E09B1 /* Shimmer.swift */; };
+		AE50D6062AF84D4E005E09B1 /* View+IsHidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE50D6052AF84D4E005E09B1 /* View+IsHidden.swift */; };
 		AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592912AF558BE005C4515 /* LoginResponse.swift */; };
 		AE5592952AF55917005C4515 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592942AF55917005C4515 /* LoginRequest.swift */; };
 		AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592982AF55AC7005C4515 /* AccessToken.swift */; };
+		AE60678D2AF6E73E009BF21F /* RepositoryAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60678C2AF6E73D009BF21F /* RepositoryAssambly.swift */; };
 		AE9080F22AF48C64008EABC4 /* AuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */; };
 		AE9080F92AF49118008EABC4 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F82AF49118008EABC4 /* L10n.swift */; };
 		AE98691B2AF6BABE00C79CD3 /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98691A2AF6BABE00C79CD3 /* LogoutRequest.swift */; };
@@ -27,10 +38,13 @@
 		AE9869282AF6C57600C79CD3 /* GetProfileUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9869272AF6C57600C79CD3 /* GetProfileUseCase.swift */; };
 		AE98692A2AF6C65C00C79CD3 /* GetUserResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9869292AF6C65C00C79CD3 /* GetUserResponse.swift */; };
 		AE98692C2AF6C6D200C79CD3 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98692B2AF6C6D200C79CD3 /* UserProfile.swift */; };
+		AE98692E2AF6D9C100C79CD3 /* SideNav.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98692D2AF6D9C100C79CD3 /* SideNav.swift */; };
 		AEAFFDF82AF4D25600E7B5D0 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */; };
 		AEAFFDFA2AF4E9D400E7B5D0 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */; };
 		AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */; };
 		AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */; };
+		AEBE12552AF86D3700BB549D /* SurveyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12542AF86D3700BB549D /* SurveyView.swift */; };
+		AEBE12572AF8729A00BB549D /* SurveyEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12562AF8729A00BB549D /* SurveyEnviroment.swift */; };
 		AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599292AF47F720099DDE9 /* Injector.swift */; };
 		AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */; };
 		AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992D2AF47FDE0099DDE9 /* K.swift */; };
@@ -91,9 +105,20 @@
 		AE4CD6112AF4A7CA001246BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AE4CD61A2AF4ACEE001246BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		AE50D6082AF865E7005E09B1 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
+		AE50D5F02AF81BBA005E09B1 /* HomeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContentView.swift; sourceTree = "<group>"; };
+		AE50D5F22AF833EC005E09B1 /* SurveyRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepositoryImpl.swift; sourceTree = "<group>"; };
+		AE50D5F42AF83414005E09B1 /* SurveyApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyApi.swift; sourceTree = "<group>"; };
+		AE50D5F62AF83429005E09B1 /* SurveyListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyListResponse.swift; sourceTree = "<group>"; };
+		AE50D5F82AF834CA005E09B1 /* SurveyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyRepository.swift; sourceTree = "<group>"; };
+		AE50D5FA2AF8353E005E09B1 /* SurveyItemList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyItemList.swift; sourceTree = "<group>"; };
+		AE50D5FD2AF83C18005E09B1 /* GetSurveysUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetSurveysUseCase.swift; sourceTree = "<group>"; };
+		AE50D5FF2AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedactedAndShimmerViewModifier.swift; sourceTree = "<group>"; };
+		AE50D6012AF84456005E09B1 /* Shimmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shimmer.swift; sourceTree = "<group>"; };
+		AE50D6052AF84D4E005E09B1 /* View+IsHidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+IsHidden.swift"; sourceTree = "<group>"; };
 		AE5592912AF558BE005C4515 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		AE5592942AF55917005C4515 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		AE5592982AF55AC7005C4515 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
+		AE60678C2AF6E73D009BF21F /* RepositoryAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssambly.swift; sourceTree = "<group>"; };
 		AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
 		AE9080F82AF49118008EABC4 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		AE98691A2AF6BABE00C79CD3 /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
@@ -105,10 +130,13 @@
 		AE9869272AF6C57600C79CD3 /* GetProfileUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProfileUseCase.swift; sourceTree = "<group>"; };
 		AE9869292AF6C65C00C79CD3 /* GetUserResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUserResponse.swift; sourceTree = "<group>"; };
 		AE98692B2AF6C6D200C79CD3 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		AE98692D2AF6D9C100C79CD3 /* SideNav.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideNav.swift; sourceTree = "<group>"; };
 		AEAFFDF72AF4D25600E7B5D0 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		AEAFFDF92AF4E9D400E7B5D0 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
 		AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		AEBE12542AF86D3700BB549D /* SurveyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyView.swift; sourceTree = "<group>"; };
+		AEBE12562AF8729A00BB549D /* SurveyEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurveyEnviroment.swift; sourceTree = "<group>"; };
 		AEC599292AF47F720099DDE9 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
 		AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		AEC5992D2AF47FDE0099DDE9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
@@ -207,6 +235,14 @@
 			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
+		AE50D5FC2AF83BFF005E09B1 /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				AE50D5FD2AF83C18005E09B1 /* GetSurveysUseCase.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
 		AE5592902AF5589F005C4515 /* Response */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,6 +250,7 @@
 				AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */,
 				AE98691E2AF6BEC100C79CD3 /* LogoutResponse.swift */,
 				AE9869292AF6C65C00C79CD3 /* GetUserResponse.swift */,
+				AE50D5F62AF83429005E09B1 /* SurveyListResponse.swift */,
 			);
 			path = Response;
 			sourceTree = "<group>";
@@ -243,6 +280,7 @@
 			children = (
 				AE5592982AF55AC7005C4515 /* AccessToken.swift */,
 				AE98692B2AF6C6D200C79CD3 /* UserProfile.swift */,
+				AE50D5FA2AF8353E005E09B1 /* SurveyItemList.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -284,9 +322,26 @@
 			path = User;
 			sourceTree = "<group>";
 		};
+		AEBE12532AF86D2600BB549D /* Survey */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE12542AF86D3700BB549D /* SurveyView.swift */,
+			);
+			path = Survey;
+			sourceTree = "<group>";
+		};
+		AEBE12582AF8729F00BB549D /* Enviroments */ = {
+			isa = PBXGroup;
+			children = (
+				AEBE12562AF8729A00BB549D /* SurveyEnviroment.swift */,
+			);
+			path = Enviroments;
+			sourceTree = "<group>";
+		};
 		AEC5991E2AF47E070099DDE9 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				AEBE12582AF8729F00BB549D /* Enviroments */,
 				AEE8C0EC2AF5B3300093964C /* Coordinator */,
 				AEF700382AF45611003BDFCB /* ChallengeMobileApp.swift */,
 				AEC599282AF47F530099DDE9 /* Utilities */,
@@ -301,6 +356,7 @@
 				AEC599292AF47F720099DDE9 /* Injector.swift */,
 				AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */,
 				AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */,
+				AE60678C2AF6E73D009BF21F /* RepositoryAssambly.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -310,6 +366,7 @@
 			children = (
 				AEC599372AF483E20099DDE9 /* AuthApi.swift */,
 				AE9869222AF6C3B400C79CD3 /* UserApi.swift */,
+				AE50D5F42AF83414005E09B1 /* SurveyApi.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -318,24 +375,28 @@
 			isa = PBXGroup;
 			children = (
 				AEC599262AF47EF50099DDE9 /* Features */,
-				AEC599252AF47EE30099DDE9 /* Shared */,
+				AEC599252AF47EE30099DDE9 /* Components */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		AEC599252AF47EE30099DDE9 /* Shared */ = {
+		AEC599252AF47EE30099DDE9 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				AEAFFDFB2AF4EEE500E7B5D0 /* VisualEffectBlur.swift */,
 				AEAFFDFD2AF4EF3900E7B5D0 /* CustomTextField.swift */,
+				AE98692D2AF6D9C100C79CD3 /* SideNav.swift */,
+				AE50D5FF2AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift */,
+				AE50D6012AF84456005E09B1 /* Shimmer.swift */,
 			);
-			path = Shared;
+			path = Components;
 			sourceTree = "<group>";
 		};
 		AEC599262AF47EF50099DDE9 /* Features */ = {
 			isa = PBXGroup;
 			children = (
 				AE50D6072AF86591005E09B1 /* ForgotPassword */,
+				AEBE12532AF86D2600BB549D /* Survey */,
 				AEC599302AF480660099DDE9 /* Login */,
 				AEC5992F2AF480600099DDE9 /* Home */,
 			);
@@ -349,6 +410,7 @@
 				AEE2BB1D2AF6086700C29D4D /* String+DataEncoded.swift */,
 				AEE2BB1F2AF6389900C29D4D /* Date+ToString.swift */,
 				AEE2BB212AF638C400C29D4D /* String+ToDate.swift */,
+				AE50D6052AF84D4E005E09B1 /* View+IsHidden.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -366,6 +428,7 @@
 			children = (
 				AEC599312AF480860099DDE9 /* HomeView.swift */,
 				AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */,
+				AE50D5F02AF81BBA005E09B1 /* HomeContentView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -391,6 +454,7 @@
 		AEE8C0D62AF57EF50093964C /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				AE50D5FC2AF83BFF005E09B1 /* Survey */,
 				AE9869262AF6C55200C79CD3 /* User */,
 				AEE8C0D72AF57F0E0093964C /* Auth */,
 			);
@@ -434,6 +498,7 @@
 			children = (
 				AEE8C0E12AF5855D0093964C /* AuthRepository.swift */,
 				AE9869242AF6C51300C79CD3 /* UserRepository.swift */,
+				AE50D5F82AF834CA005E09B1 /* SurveyRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -443,6 +508,7 @@
 			children = (
 				AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */,
 				AE9869202AF6C36200C79CD3 /* UserRepositoryImpl.swift */,
+				AE50D5F22AF833EC005E09B1 /* SurveyRepositoryImpl.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -740,38 +806,52 @@
 				AEE2BB182AF6042C00C29D4D /* RefreshTokenUseCase.swift in Sources */,
 				AEE8C0D52AF57D860093964C /* NetworkRequestError.swift in Sources */,
 				AEE8C0EB2AF5AF520093964C /* IsUserLoggedUseCase.swift in Sources */,
+				AE50D5FB2AF8353E005E09B1 /* SurveyItemList.swift in Sources */,
 				AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */,
 				AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */,
 				AE9869282AF6C57600C79CD3 /* GetProfileUseCase.swift in Sources */,
 				AE98692C2AF6C6D200C79CD3 /* UserProfile.swift in Sources */,
 				AEE8C0DD2AF583880093964C /* Storage.swift in Sources */,
+				AE50D5FE2AF83C18005E09B1 /* GetSurveysUseCase.swift in Sources */,
+				AE50D6062AF84D4E005E09B1 /* View+IsHidden.swift in Sources */,
 				AEF7003B2AF45611003BDFCB /* LoginView.swift in Sources */,
 				AEE2BB1E2AF6086700C29D4D /* String+DataEncoded.swift in Sources */,
 				AE9080F22AF48C64008EABC4 /* AuthRepositoryImpl.swift in Sources */,
+				AE50D5F32AF833EC005E09B1 /* SurveyRepositoryImpl.swift in Sources */,
+				AEBE12572AF8729A00BB549D /* SurveyEnviroment.swift in Sources */,
 				AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */,
 				AEE8C0EE2AF5B34E0093964C /* Screen.swift in Sources */,
 				AEE8C0E72AF58D380093964C /* AppCoordinatorViewModel.swift in Sources */,
 				AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */,
+				AE50D5F92AF834CA005E09B1 /* SurveyRepository.swift in Sources */,
 				AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */,
 				AE98691D2AF6BC7B00C79CD3 /* LogoutUseCase.swift in Sources */,
 				AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */,
 				AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */,
+				AE50D6002AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift in Sources */,
 				AEE2BB222AF638C400C29D4D /* String+ToDate.swift in Sources */,
 				AEE2BB1C2AF6079700C29D4D /* RefreshTokenResponse.swift in Sources */,
+				AE50D5F72AF83429005E09B1 /* SurveyListResponse.swift in Sources */,
+				AE98692E2AF6D9C100C79CD3 /* SideNav.swift in Sources */,
 				AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */,
 				AEAFFDF82AF4D25600E7B5D0 /* Assets.swift in Sources */,
 				AE9869252AF6C51300C79CD3 /* UserRepository.swift in Sources */,
 				AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */,
+				AE50D5F12AF81BBA005E09B1 /* HomeContentView.swift in Sources */,
+				AE50D6022AF84456005E09B1 /* Shimmer.swift in Sources */,
 				AEE2BB1A2AF606E100C29D4D /* RefreshTokenRequest.swift in Sources */,
+				AE50D5F52AF83414005E09B1 /* SurveyApi.swift in Sources */,
 				AEF700392AF45611003BDFCB /* ChallengeMobileApp.swift in Sources */,
 				AEE2BB202AF6389900C29D4D /* Date+ToString.swift in Sources */,
 				AE9080F92AF49118008EABC4 /* L10n.swift in Sources */,
 				AEE8C0D92AF57F1C0093964C /* LoginUseCase.swift in Sources */,
 				AEE8C0D32AF57D6E0093964C /* NetworkErrors.swift in Sources */,
 				AE2CF3312AF4872B0095C63B /* Optional+Unwrap.swift in Sources */,
+				AE60678D2AF6E73E009BF21F /* RepositoryAssambly.swift in Sources */,
 				AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */,
 				AE50D6092AF865E7005E09B1 /* ForgotPasswordView.swift in Sources */,
 				AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */,
+				AEBE12552AF86D3700BB549D /* SurveyView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

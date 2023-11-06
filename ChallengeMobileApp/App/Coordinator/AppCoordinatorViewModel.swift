@@ -42,6 +42,10 @@ class AppCoordinatorViewModel: ObservableObject {
         routes.push(.login)
     }
     
+    func goToSurvey() {
+        routes.push(.survey)
+    }
+    
     func goBack() {
         routes.goBack()
     }

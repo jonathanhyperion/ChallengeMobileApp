@@ -13,6 +13,7 @@ target 'ChallengeMobileApp' do
   pod 'Moya/ReactiveSwift', '~> 15.0'
   pod 'Moya/Combine', '~> 15.0'
   pod 'FlowStacks'
+  pod 'Kingfisher', '~> 7.0'
   
 end
 
