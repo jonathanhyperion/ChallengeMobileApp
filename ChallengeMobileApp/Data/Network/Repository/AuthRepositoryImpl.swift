@@ -78,4 +78,14 @@ struct AuthRepositoryImpl: AuthRepository {
             }
             .eraseToAnyPublisher()
     }
+    
+    func forgotPassword(params: ForgotPasswordRequest) -> AnyPublisher<String, Error> {
+        api.requestPublisher(.forgotPassword(params: params))
+            .map(\.data)
+            .decode(type: ForgotPasswordResponse.self, decoder: JSONDecoder())
+            .tryMap { response in
+                return response.meta?.message ?? ""
+            }
+            .eraseToAnyPublisher()
+    }
 }

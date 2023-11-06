@@ -12,4 +12,5 @@ protocol AuthRepository {
     func login(params: LoginRequest) -> AnyPublisher<AccessToken, Error>
     func logout(params: LogoutRequest) -> AnyPublisher<LogoutResponse, Error>
     func refeshToken(params: RefreshTokenRequest) -> AnyPublisher<AccessToken, Error>
+    func forgotPassword(params: ForgotPasswordRequest) -> AnyPublisher<String, Error>
 }
