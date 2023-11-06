@@ -51,15 +51,4 @@ extension UserApi: TargetType {
             "Authorization": "Bearer \(Storage.shared.getTokenAuth())",
         ]
     }
-    
-    var sampleData: Data {
-        var data = Data()
-        switch self {
-        case .getUser:
-            data = """
-            {}
-            """.dataEncoded
-        }
-        return data
-    }
 }

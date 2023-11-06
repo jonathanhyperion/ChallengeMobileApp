@@ -8,15 +8,15 @@ import Combine
 import Swinject
 
 final class HomeViewModel: ObservableObject {
-    @Published var user: UserProfile  = UserProfile.placeholders
-    @Published var surveys: [SurveyItemList] = SurveyItemList.placeholders
+    @Published var user: UserProfile = UserProfile.placeholders
+    @Published var surveys: [SurveyItemList] = SurveyStorage.shared.getSurveyList()
     @Published var currentSurveyIndex: Int = 0
     @Published var isLoading = false
     
     private let logoutUseCase: LogoutUseCase
     private let getProfileUseCase: GetProfileUseCase
     private let getSurveyUseCase: GetSurveysUseCase
-    private var surveyEnviroment: SurveyEnviroment?
+    private var surveyEnviroment: SurveyStorage?
 
     private var cancellable = Set<AnyCancellable>()
     
@@ -28,10 +28,6 @@ final class HomeViewModel: ObservableObject {
         self.logoutUseCase = logoutUseCase
         self.getProfileUseCase = getProfileUseCase
         self.getSurveyUseCase = getSurveyUseCase
-    }
-    
-    func setup(_ surveyEnviroment: SurveyEnviroment) {
-        self.surveyEnviroment = surveyEnviroment
     }
     
     func logout() {
@@ -46,9 +42,13 @@ final class HomeViewModel: ObservableObject {
         .sink(receiveCompletion: { error in
             switch error {
             case let .failure(error):
-                if let _ = error as? NetworkRequestError {}
+                    if let networkError = error as? NetworkRequestError {
+                        let result: NetworkErrors? = networkError.associatedValue()
+                        if result != nil {}
+                    }
+                    print("❌ Error \(error)")
             case .finished:
-                print("Finish...")
+                break
             }
         }, receiveValue: { [weak self] _ in
             Storage.shared.clearAll()
@@ -62,9 +62,14 @@ final class HomeViewModel: ObservableObject {
             .sink(receiveCompletion: { error in
                 switch error {
                 case let .failure(error):
-                    if let _ = error as? NetworkRequestError {}
+                    if let networkError = error as? NetworkRequestError {
+                        let result: NetworkErrors? = networkError.associatedValue()
+                        if result != nil {}
+                    }
+                    self.surveys = []
+                    print("❌ Error \(error)")
                 case .finished:
-                    print("Finish...")
+                    break
                 }
             }, receiveValue: { [weak self] user in
                 self?.user = user
@@ -74,7 +79,8 @@ final class HomeViewModel: ObservableObject {
     }
     
     func getSurveys() {
-        if surveyEnviroment?.surveyList.isEmpty ?? false {
+        print("list \(SurveyStorage.shared.getSurveyList())")
+        if SurveyStorage.shared.getSurveyList().isEmpty {
             self.isLoading = true
             Task {
                 getSurveyUseCase.getSurveys(pageNumber: 1, pageSize: 5)
@@ -91,16 +97,17 @@ final class HomeViewModel: ObservableObject {
                         case .finished:
                             break
                         }
-                        
                         DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
                             self.isLoading = false
                         }
                     }, receiveValue: { [weak self] surveys in
                         self?.surveys = surveys
+                        SurveyStorage.shared.saveSurveyList(list: surveys)
+                        print("list \(SurveyStorage.shared.getSurveyList())")
                     })
                     .store(in: &cancellable)
             }
-        }
+        } 
     }
     
     func todayDate() -> String {

@@ -8,8 +8,8 @@ import Moya
 import Combine
 
 protocol AuthRepository {
-    func login(params: LoginRequest) -> AnyPublisher<AccessToken, Error>
     func isUserLogged() -> Bool
-    func refeshToken(params: RefreshTokenRequest) -> AnyPublisher<AccessToken, Error>
+    func login(params: LoginRequest) -> AnyPublisher<AccessToken, Error>
     func logout(params: LogoutRequest) -> AnyPublisher<LogoutResponse, Error>
+    func refeshToken(params: RefreshTokenRequest) -> AnyPublisher<AccessToken, Error>
 }

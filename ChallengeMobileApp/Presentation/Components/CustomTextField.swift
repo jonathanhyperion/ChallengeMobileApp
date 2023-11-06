@@ -7,11 +7,14 @@ import SwiftUI
 
 struct CustomTextField: View {
     @Binding var text: String
+    
     var placeholder: String
     var backgroundColor: Color
     var foregroundColor: Color
     var cornerRadius: CGFloat
     var isPassword: Bool
+    
+    let pushNext: () -> Void
 
     var body: some View {
         HStack {
@@ -41,12 +44,14 @@ struct CustomTextField: View {
             
             if isPassword {
                 Button(
-                    action: {}
+                    action: {
+                        pushNext()
+                    }
                 ) {
                     Text(L10n.forgotPassword)
                         .font(.custom(FontFamily.Neuzeit.book, fixedSize: 17.0))
                         .foregroundColor(.gray)
-                        .padding(.horizontal, 16)
+                        .padding(.horizontal, 16.0)
                 }
             }
         }

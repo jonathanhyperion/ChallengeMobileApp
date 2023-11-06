@@ -54,15 +54,4 @@ extension SurveyApi: TargetType {
             "Authorization": "Bearer \(Storage.shared.getTokenAuth())",
         ]
     }
-    
-    var sampleData: Data {
-        var data = Data()
-        switch self {
-        case .getSurveys:
-            data = """
-            {}
-            """.dataEncoded
-        }
-        return data
-    }
 }

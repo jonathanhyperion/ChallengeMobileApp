@@ -7,6 +7,7 @@ import Foundation
 
 final class Storage {
     static let shared = Storage()
+    
     let storage = UserDefaults(suiteName: "user")
 
     private enum Constants {

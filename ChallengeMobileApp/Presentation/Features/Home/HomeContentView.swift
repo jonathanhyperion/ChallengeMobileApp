@@ -8,11 +8,11 @@ import Kingfisher
 
 struct HomeContetView: View {
     @ObservedObject var viewModel: HomeViewModel
-    @EnvironmentObject var surveyEnviroment: SurveyEnviroment
     @Binding var isMenuOpen: Bool
+    
     @State private var isLastImage = false
-    @State private var title = ""
-    @State private var description = ""
+    @State private var title = "Placeholder title"
+    @State private var description = "Placeholder description"
     @State private var indexSurvey = 0
     
     let reader: CGSize
@@ -37,11 +37,26 @@ struct HomeContetView: View {
                             )
                             .clipped()
                             .tag(index)
+                            .overlay {
+                                Rectangle()
+                                .foregroundColor(.clear)
+                                .frame(
+                                    width: reader.width,
+                                    height: reader.height
+                                )
+                                .background(
+                                    LinearGradient(
+                                        gradient: Gradient(colors: [.black.opacity(0.3), .black.opacity(0.3)]),
+                                        startPoint: .topLeading,
+                                        endPoint: .bottomTrailing
+                                    )
+                                )
+                            }
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .onAppear {
-                    if !Storage.shared.isTokenExpired() {
+                    if !Storage.shared.isTokenExpired() && !SurveyStorage.shared.getSurveyList().isEmpty {
                         title = viewModel.surveys[indexSurvey].title
                         description = viewModel.surveys[indexSurvey].description
                     }
@@ -86,7 +101,7 @@ struct HomeContetView: View {
                         ForEach(viewModel.surveys.indices, id: \.self) { i in
                             Circle()
                                 .frame(width: 10.0, height: 10.0)
-                                .foregroundColor(i == self.viewModel.currentSurveyIndex ? .white : .gray)
+                                .foregroundColor(i == self.viewModel.currentSurveyIndex ? .white : .gray.opacity(0.5))
                                 .onTapGesture {
                                     withAnimation {
                                         self.viewModel.currentSurveyIndex = i
@@ -103,13 +118,13 @@ struct HomeContetView: View {
                     HStack {
                         Text(description)
                             .font(.custom(FontFamily.Neuzeit.book, fixedSize: 17.0))
+                            .foregroundColor(.gray)
                             .redactShimmer(condition: viewModel.isLoading)
                         
                         Spacer()
                         
                         Button(action: {
-                            // TODO: Navigation
-                            surveyEnviroment.survey = viewModel.surveys[indexSurvey]
+                            SurveyStorage.shared.saveSurvey(survey: viewModel.surveys[indexSurvey])
                             goToSurvey()
                             
                         }, label: {

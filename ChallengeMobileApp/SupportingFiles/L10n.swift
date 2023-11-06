@@ -13,6 +13,11 @@ internal enum L10n {
     internal static let forgotPassword = L10n.tr("Localizable", "forgotPassword")
     internal static let login = L10n.tr("Localizable", "login")
     internal static let today = L10n.tr("Localizable", "today")
+    internal static let enterEmailReset = L10n.tr("Localizable", "enterEmailReset")
+    internal static let reset = L10n.tr("Localizable", "reset")
+    internal static let logout = L10n.tr("Localizable", "logout")
+    internal static let version = L10n.tr("Localizable", "version")
+    internal static let startSurvey = L10n.tr("Localizable", "startSurvey")
 }
 
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
