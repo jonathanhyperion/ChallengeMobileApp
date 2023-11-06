@@ -26,7 +26,6 @@
 		AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592912AF558BE005C4515 /* LoginResponse.swift */; };
 		AE5592952AF55917005C4515 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592942AF55917005C4515 /* LoginRequest.swift */; };
 		AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5592982AF55AC7005C4515 /* AccessToken.swift */; };
-		AE60678D2AF6E73E009BF21F /* RepositoryAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE60678C2AF6E73D009BF21F /* RepositoryAssambly.swift */; };
 		AE9080F22AF48C64008EABC4 /* AuthRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */; };
 		AE9080F92AF49118008EABC4 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE9080F82AF49118008EABC4 /* L10n.swift */; };
 		AE98691B2AF6BABE00C79CD3 /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE98691A2AF6BABE00C79CD3 /* LogoutRequest.swift */; };
@@ -51,13 +50,15 @@
 		AEBE12642AF8C50200BB549D /* ForgotPasswordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12632AF8C50200BB549D /* ForgotPasswordResponse.swift */; };
 		AEBE12662AF8C55800BB549D /* ForgotPasswordUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12652AF8C55800BB549D /* ForgotPasswordUseCase.swift */; };
 		AEBE12682AF8C6A100BB549D /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBE12672AF8C6A100BB549D /* ForgotPasswordViewModel.swift */; };
-		AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599292AF47F720099DDE9 /* Injector.swift */; };
-		AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */; };
 		AEC5992E2AF47FDE0099DDE9 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC5992D2AF47FDE0099DDE9 /* K.swift */; };
 		AEC599322AF480860099DDE9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599312AF480860099DDE9 /* HomeView.swift */; };
 		AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599332AF480970099DDE9 /* LoginViewModel.swift */; };
 		AEC599362AF4812D0099DDE9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */; };
 		AEC599382AF483E20099DDE9 /* AuthApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC599372AF483E20099DDE9 /* AuthApi.swift */; };
+		AED133102AF94B2800994A68 /* RepositoryAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1330C2AF94B2700994A68 /* RepositoryAssambly.swift */; };
+		AED133112AF94B2800994A68 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1330D2AF94B2800994A68 /* ServiceAssembly.swift */; };
+		AED133122AF94B2800994A68 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1330E2AF94B2800994A68 /* Injector.swift */; };
+		AED133132AF94B2800994A68 /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AED1330F2AF94B2800994A68 /* UseCaseAssembly.swift */; };
 		AEE2BB182AF6042C00C29D4D /* RefreshTokenUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */; };
 		AEE2BB1A2AF606E100C29D4D /* RefreshTokenRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */; };
 		AEE2BB1C2AF6079700C29D4D /* RefreshTokenResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */; };
@@ -71,7 +72,6 @@
 		AEE8C0E22AF5855D0093964C /* AuthRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E12AF5855D0093964C /* AuthRepository.swift */; };
 		AEE8C0E52AF58C650093964C /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E42AF58C650093964C /* AppCoordinator.swift */; };
 		AEE8C0E72AF58D380093964C /* AppCoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */; };
-		AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */; };
 		AEE8C0EB2AF5AF520093964C /* IsUserLoggedUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */; };
 		AEE8C0EE2AF5B34E0093964C /* Screen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0ED2AF5B34E0093964C /* Screen.swift */; };
 		AEE8C0F02AF5B7AC0093964C /* AuthAPIServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEE8C0EF2AF5B7AC0093964C /* AuthAPIServiceTests.swift */; };
@@ -84,13 +84,6 @@
 
 /* Begin PBXContainerItemProxy section */
 		AEF700462AF45615003BDFCB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEF7002D2AF45611003BDFCB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AEF700342AF45611003BDFCB;
-			remoteInfo = ChallengeMobileApp;
-		};
-		AEF700502AF45615003BDFCB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AEF7002D2AF45611003BDFCB /* Project object */;
 			proxyType = 1;
@@ -124,7 +117,6 @@
 		AE5592912AF558BE005C4515 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		AE5592942AF55917005C4515 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
 		AE5592982AF55AC7005C4515 /* AccessToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessToken.swift; sourceTree = "<group>"; };
-		AE60678C2AF6E73D009BF21F /* RepositoryAssambly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryAssambly.swift; sourceTree = "<group>"; };
 		AE9080F12AF48C64008EABC4 /* AuthRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepositoryImpl.swift; sourceTree = "<group>"; };
 		AE9080F82AF49118008EABC4 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
 		AE98691A2AF6BABE00C79CD3 /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
@@ -149,13 +141,15 @@
 		AEBE12632AF8C50200BB549D /* ForgotPasswordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordResponse.swift; sourceTree = "<group>"; };
 		AEBE12652AF8C55800BB549D /* ForgotPasswordUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordUseCase.swift; sourceTree = "<group>"; };
 		AEBE12672AF8C6A100BB549D /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
-		AEC599292AF47F720099DDE9 /* Injector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
-		AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
 		AEC5992D2AF47FDE0099DDE9 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 		AEC599312AF480860099DDE9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		AEC599332AF480970099DDE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		AEC599352AF4812D0099DDE9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		AEC599372AF483E20099DDE9 /* AuthApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthApi.swift; sourceTree = "<group>"; };
+		AED1330C2AF94B2700994A68 /* RepositoryAssambly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryAssambly.swift; sourceTree = "<group>"; };
+		AED1330D2AF94B2800994A68 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceAssembly.swift; sourceTree = "<group>"; };
+		AED1330E2AF94B2800994A68 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Injector.swift; sourceTree = "<group>"; };
+		AED1330F2AF94B2800994A68 /* UseCaseAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
 		AEE2BB172AF6042C00C29D4D /* RefreshTokenUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenUseCase.swift; sourceTree = "<group>"; };
 		AEE2BB192AF606E100C29D4D /* RefreshTokenRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenRequest.swift; sourceTree = "<group>"; };
 		AEE2BB1B2AF6079700C29D4D /* RefreshTokenResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenResponse.swift; sourceTree = "<group>"; };
@@ -169,7 +163,6 @@
 		AEE8C0E12AF5855D0093964C /* AuthRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepository.swift; sourceTree = "<group>"; };
 		AEE8C0E42AF58C650093964C /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		AEE8C0E62AF58D380093964C /* AppCoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinatorViewModel.swift; sourceTree = "<group>"; };
-		AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseCaseAssembly.swift; sourceTree = "<group>"; };
 		AEE8C0EA2AF5AF520093964C /* IsUserLoggedUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsUserLoggedUseCase.swift; sourceTree = "<group>"; };
 		AEE8C0ED2AF5B34E0093964C /* Screen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Screen.swift; sourceTree = "<group>"; };
 		AEE8C0EF2AF5B7AC0093964C /* AuthAPIServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthAPIServiceTests.swift; sourceTree = "<group>"; };
@@ -179,7 +172,6 @@
 		AEF7003C2AF45614003BDFCB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEF7003F2AF45614003BDFCB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AEF700452AF45615003BDFCB /* ChallengeMobileAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMobileAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEF7004F2AF45615003BDFCB /* ChallengeMobileAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeMobileAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1A45ADF7EF899C65D0F2D5 /* Pods-ChallengeMobileApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileApp.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileApp/Pods-ChallengeMobileApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -197,13 +189,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				357B7832C8701F84D521BCD4 /* Pods_ChallengeMobileAppTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEF7004C2AF45615003BDFCB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,17 +351,6 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		AEC5991F2AF47E150099DDE9 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				AEC599292AF47F720099DDE9 /* Injector.swift */,
-				AEC5992B2AF47FA80099DDE9 /* ServiceAssembly.swift */,
-				AEE8C0E82AF590CE0093964C /* UseCaseAssembly.swift */,
-				AE60678C2AF6E73D009BF21F /* RepositoryAssambly.swift */,
-			);
-			path = Dependencies;
-			sourceTree = "<group>";
-		};
 		AEC599212AF47E420099DDE9 /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -458,6 +432,17 @@
 				AEC599332AF480970099DDE9 /* LoginViewModel.swift */,
 			);
 			path = Login;
+			sourceTree = "<group>";
+		};
+		AED1330B2AF94B0B00994A68 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				AED1330E2AF94B2800994A68 /* Injector.swift */,
+				AED1330C2AF94B2700994A68 /* RepositoryAssambly.swift */,
+				AED1330D2AF94B2800994A68 /* ServiceAssembly.swift */,
+				AED1330F2AF94B2800994A68 /* UseCaseAssembly.swift */,
+			);
+			path = Dependencies;
 			sourceTree = "<group>";
 		};
 		AEE8C0D12AF57D590093964C /* Error */ = {
@@ -557,7 +542,6 @@
 			children = (
 				AEF700352AF45611003BDFCB /* ChallengeMobileApp.app */,
 				AEF700452AF45615003BDFCB /* ChallengeMobileAppTests.xctest */,
-				AEF7004F2AF45615003BDFCB /* ChallengeMobileAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -565,12 +549,12 @@
 		AEF700372AF45611003BDFCB /* ChallengeMobileApp */ = {
 			isa = PBXGroup;
 			children = (
+				AED1330B2AF94B0B00994A68 /* Dependencies */,
 				AEE8C0DA2AF583020093964C /* Data */,
 				AE5592962AF559C6005C4515 /* Domain */,
 				AE4CD6112AF4A7CA001246BF /* Info.plist */,
 				AE9080F32AF48F7C008EABC4 /* SupportingFiles */,
 				AEC599242AF47ED70099DDE9 /* Presentation */,
-				AEC5991F2AF47E150099DDE9 /* Dependencies */,
 				AEC5991E2AF47E070099DDE9 /* App */,
 				AEF7003E2AF45614003BDFCB /* Preview Content */,
 			);
@@ -635,24 +619,6 @@
 			productReference = AEF700452AF45615003BDFCB /* ChallengeMobileAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AEF7004E2AF45615003BDFCB /* ChallengeMobileAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEF7005F2AF45616003BDFCB /* Build configuration list for PBXNativeTarget "ChallengeMobileAppUITests" */;
-			buildPhases = (
-				AEF7004B2AF45615003BDFCB /* Sources */,
-				AEF7004C2AF45615003BDFCB /* Frameworks */,
-				AEF7004D2AF45615003BDFCB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AEF700512AF45615003BDFCB /* PBXTargetDependency */,
-			);
-			name = ChallengeMobileAppUITests;
-			productName = ChallengeMobileAppUITests;
-			productReference = AEF7004F2AF45615003BDFCB /* ChallengeMobileAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -667,10 +633,6 @@
 						CreatedOnToolsVersion = 14.1;
 					};
 					AEF700442AF45615003BDFCB = {
-						CreatedOnToolsVersion = 14.1;
-						TestTargetID = AEF700342AF45611003BDFCB;
-					};
-					AEF7004E2AF45615003BDFCB = {
 						CreatedOnToolsVersion = 14.1;
 						TestTargetID = AEF700342AF45611003BDFCB;
 					};
@@ -691,7 +653,6 @@
 			targets = (
 				AEF700342AF45611003BDFCB /* ChallengeMobileApp */,
 				AEF700442AF45615003BDFCB /* ChallengeMobileAppTests */,
-				AEF7004E2AF45615003BDFCB /* ChallengeMobileAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -710,13 +671,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AEF700432AF45615003BDFCB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEF7004D2AF45615003BDFCB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -811,8 +765,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AED133132AF94B2800994A68 /* UseCaseAssembly.swift in Sources */,
 				AE9869212AF6C36200C79CD3 /* UserRepositoryImpl.swift in Sources */,
+				AED133102AF94B2800994A68 /* RepositoryAssambly.swift in Sources */,
 				AE9869232AF6C3B400C79CD3 /* UserApi.swift in Sources */,
+				AED133112AF94B2800994A68 /* ServiceAssembly.swift in Sources */,
 				AE98691F2AF6BEC100C79CD3 /* LogoutResponse.swift in Sources */,
 				AEC599322AF480860099DDE9 /* HomeView.swift in Sources */,
 				AE98691B2AF6BABE00C79CD3 /* LogoutRequest.swift in Sources */,
@@ -827,7 +784,6 @@
 				AEE8C0EB2AF5AF520093964C /* IsUserLoggedUseCase.swift in Sources */,
 				AE50D5FB2AF8353E005E09B1 /* SurveyItemList.swift in Sources */,
 				AE5592922AF558BE005C4515 /* LoginResponse.swift in Sources */,
-				AEE8C0E92AF590CE0093964C /* UseCaseAssembly.swift in Sources */,
 				AE9869282AF6C57600C79CD3 /* GetProfileUseCase.swift in Sources */,
 				AE98692C2AF6C6D200C79CD3 /* UserProfile.swift in Sources */,
 				AEE8C0DD2AF583880093964C /* Storage.swift in Sources */,
@@ -849,16 +805,15 @@
 				AE98691D2AF6BC7B00C79CD3 /* LogoutUseCase.swift in Sources */,
 				AEBE12662AF8C55800BB549D /* ForgotPasswordUseCase.swift in Sources */,
 				AEAFFDFC2AF4EEE500E7B5D0 /* VisualEffectBlur.swift in Sources */,
+				AED133122AF94B2800994A68 /* Injector.swift in Sources */,
 				AEAFFDFE2AF4EF3900E7B5D0 /* CustomTextField.swift in Sources */,
 				AE50D6002AF8410F005E09B1 /* RedactedAndShimmerViewModifier.swift in Sources */,
 				AEE2BB222AF638C400C29D4D /* String+ToDate.swift in Sources */,
 				AEE2BB1C2AF6079700C29D4D /* RefreshTokenResponse.swift in Sources */,
 				AE50D5F72AF83429005E09B1 /* SurveyListResponse.swift in Sources */,
 				AE98692E2AF6D9C100C79CD3 /* SideNav.swift in Sources */,
-				AEC5992C2AF47FA80099DDE9 /* ServiceAssembly.swift in Sources */,
 				AEAFFDF82AF4D25600E7B5D0 /* Assets.swift in Sources */,
 				AE9869252AF6C51300C79CD3 /* UserRepository.swift in Sources */,
-				AEC5992A2AF47F720099DDE9 /* Injector.swift in Sources */,
 				AE50D5F12AF81BBA005E09B1 /* HomeContentView.swift in Sources */,
 				AE50D6022AF84456005E09B1 /* Shimmer.swift in Sources */,
 				AEE2BB1A2AF606E100C29D4D /* RefreshTokenRequest.swift in Sources */,
@@ -870,7 +825,6 @@
 				AEE8C0D92AF57F1C0093964C /* LoginUseCase.swift in Sources */,
 				AEE8C0D32AF57D6E0093964C /* NetworkErrors.swift in Sources */,
 				AE2CF3312AF4872B0095C63B /* Optional+Unwrap.swift in Sources */,
-				AE60678D2AF6E73E009BF21F /* RepositoryAssambly.swift in Sources */,
 				AEC599342AF480970099DDE9 /* LoginViewModel.swift in Sources */,
 				AE50D6092AF865E7005E09B1 /* ForgotPasswordView.swift in Sources */,
 				AE5592992AF55AC7005C4515 /* AccessToken.swift in Sources */,
@@ -887,13 +841,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEF7004B2AF45615003BDFCB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -901,11 +848,6 @@
 			isa = PBXTargetDependency;
 			target = AEF700342AF45611003BDFCB /* ChallengeMobileApp */;
 			targetProxy = AEF700462AF45615003BDFCB /* PBXContainerItemProxy */;
-		};
-		AEF700512AF45615003BDFCB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AEF700342AF45611003BDFCB /* ChallengeMobileApp */;
-			targetProxy = AEF700502AF45615003BDFCB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1137,40 +1079,6 @@
 			};
 			name = Release;
 		};
-		AEF700602AF45616003BDFCB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nimble.ChallengeMobileAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChallengeMobileApp;
-			};
-			name = Debug;
-		};
-		AEF700612AF45616003BDFCB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = nimble.ChallengeMobileAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = ChallengeMobileApp;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1197,15 +1105,6 @@
 			buildConfigurations = (
 				AEF7005D2AF45615003BDFCB /* Debug */,
 				AEF7005E2AF45615003BDFCB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AEF7005F2AF45616003BDFCB /* Build configuration list for PBXNativeTarget "ChallengeMobileAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEF700602AF45616003BDFCB /* Debug */,
-				AEF700612AF45616003BDFCB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
