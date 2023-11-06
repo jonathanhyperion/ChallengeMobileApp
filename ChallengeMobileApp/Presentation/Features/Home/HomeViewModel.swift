@@ -16,7 +16,8 @@ final class HomeViewModel: ObservableObject {
     private let logoutUseCase: LogoutUseCase
     private let getProfileUseCase: GetProfileUseCase
     private let getSurveyUseCase: GetSurveysUseCase
-    
+    private var surveyEnviroment: SurveyEnviroment?
+
     private var cancellable = Set<AnyCancellable>()
     
     init(
@@ -27,6 +28,10 @@ final class HomeViewModel: ObservableObject {
         self.logoutUseCase = logoutUseCase
         self.getProfileUseCase = getProfileUseCase
         self.getSurveyUseCase = getSurveyUseCase
+    }
+    
+    func setup(_ surveyEnviroment: SurveyEnviroment) {
+        self.surveyEnviroment = surveyEnviroment
     }
     
     func logout() {
@@ -69,30 +74,32 @@ final class HomeViewModel: ObservableObject {
     }
     
     func getSurveys() {
-        self.isLoading = true
-        Task {
-            getSurveyUseCase.getSurveys(pageNumber: 1, pageSize: 5)
-                .receive(on: DispatchQueue.main)
-                .sink(receiveCompletion: { error in
-                    switch error {
-                    case let .failure(error):
-                        if let networkError = error as? NetworkRequestError {
-                            let result: NetworkErrors? = networkError.associatedValue()
-                            if result != nil {}
+        if surveyEnviroment?.surveyList.isEmpty ?? false {
+            self.isLoading = true
+            Task {
+                getSurveyUseCase.getSurveys(pageNumber: 1, pageSize: 5)
+                    .receive(on: DispatchQueue.main)
+                    .sink(receiveCompletion: { error in
+                        switch error {
+                        case let .failure(error):
+                            if let networkError = error as? NetworkRequestError {
+                                let result: NetworkErrors? = networkError.associatedValue()
+                                if result != nil {}
+                            }
+                            self.surveys = []
+                            print("❌ Error \(error)")
+                        case .finished:
+                            break
                         }
-                        self.surveys = []
-                        print("❌ Error \(error)")
-                    case .finished:
-                        break
-                    }
-                    
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
-                        self.isLoading = false
-                    }
-                }, receiveValue: { [weak self] surveys in
-                    self?.surveys = surveys
-                })
-                .store(in: &cancellable)
+                        
+                        DispatchQueue.main.asyncAfter(deadline: .now() + 3.0) {
+                            self.isLoading = false
+                        }
+                    }, receiveValue: { [weak self] surveys in
+                        self?.surveys = surveys
+                    })
+                    .store(in: &cancellable)
+            }
         }
     }
     

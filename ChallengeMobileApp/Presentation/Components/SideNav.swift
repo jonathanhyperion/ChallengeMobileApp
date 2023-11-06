@@ -7,6 +7,7 @@ import SwiftUI
 import Kingfisher
 
 struct SideNav: View {
+    @EnvironmentObject var surveyEnviroment: SurveyEnviroment
     let reader: CGSize
     let user: UserProfile
     var goToLogin: () -> Void
@@ -36,6 +37,8 @@ struct SideNav: View {
                     
                     Button(
                         action: {
+                            surveyEnviroment.resetValues()
+                            surveyEnviroment.reset()
                             LogoutAction()
                             goToLogin()
                         }, label: {

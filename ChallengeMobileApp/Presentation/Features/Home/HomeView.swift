@@ -7,6 +7,8 @@ import SwiftUI
 
 struct HomeView: View {
     @StateObject var viewModel: HomeViewModel = .make()
+    @EnvironmentObject var surveyEnviroment: SurveyEnviroment
+    
     @State private var isMenuOpen = false
     
     var goToLogin: () -> Void
@@ -43,8 +45,12 @@ struct HomeView: View {
         }
         .onAppear {
             viewModel.getProfile()
+            viewModel.setup(surveyEnviroment)
             viewModel.getSurveys()
         }
+        .onChange(of: viewModel.surveys, perform: { _ in
+            surveyEnviroment.surveyList = viewModel.surveys
+        })
     }
 }
 
