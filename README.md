@@ -22,8 +22,7 @@ https://github.com/jonathanhyperion/ChallengeMobileApp/assets/129110575/acdd0f00
 ## 🚀 Environment setup
 
 ### 🌍 Project Specifications
-1. Xcode 13+
-2. iOS 10+
+1. Xcode 14+
 3. Swift 5
 5. MVVM
 6. Cocoa Pods
