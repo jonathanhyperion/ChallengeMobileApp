@@ -1,6 +1,14 @@
 # Challenge Mobile App
 **Survey Application** provides users with survey browsing visually appealing home screen featuring survey card, the intuitive interface allows seamless horizontal scrolling through surveys, with a dynamic navigation indicator, and additional features such as secure login, options for logout, email-based password recovery and profile viewing, enhancing user interaction and convenience. The app employs efficient data caching techniques, optimizing performance.
 
+#### Login credentials:
+Email: your_email@example.com
+Pass: 12345678
+
+#### App video
+https://github.com/jonathanhyperion/ChallengeMobileApp/assets/129110575/acdd0f00-3f9f-428e-b819-8e734d123d2e
+
+
 ## Table of Contents
 - [🚀 Environment setup](#-environment-setup)
   - [🌍 Project Specifications](#-project-specifications)
