@@ -10,6 +10,9 @@ final class LoginViewModel: ObservableObject {
     @Published var email = ""
     @Published var password = ""
     @Published private(set) var validCredentials: Bool = false
+    @Published var errorLogin: Bool = false
+    @Published var isLoading: Bool = false
+
     
     private let loginUseCase: LoginUseCase
     private var cancellable = Set<AnyCancellable>()
@@ -19,30 +22,35 @@ final class LoginViewModel: ObservableObject {
     }
     
     func login() {
-        loginUseCase.login(params: LoginRequest(
+        self.isLoading = true
+        Task {
+            loginUseCase.login(params: LoginRequest(
                 grantType: "password",
                 email: email,
                 password: password,
                 clientID: K.clientID,
                 clientSecret: K.clientSecret
-            )
-        )
-        .receive(on: DispatchQueue.main)
-        .sink(receiveCompletion: { error in
-            switch error {
-            case let .failure(error):
-                if let networkError = error as? NetworkRequestError {
-                    let result: NetworkErrors? = networkError.associatedValue()
-                    if result != nil {}
+            ))
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { error in
+                switch error {
+                case let .failure(error):
+                    if let networkError = error as? NetworkRequestError {
+                        let result: NetworkErrors? = networkError.associatedValue()
+                        if result != nil {}
+                    }
+                    self.errorLogin = true
+                case .finished:
+                    break
                 }
-                print("❌ Error \(error)")
-            case .finished:
-                break
-            }
-        }, receiveValue: { [weak self] _ in
-            self?.validCredentials = true
-        })
-        .store(in: &cancellable)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    self.isLoading = false
+                }
+            }, receiveValue: { [weak self] _ in
+                self?.validCredentials = true
+            })
+            .store(in: &cancellable)
+        }
     }
 }
 

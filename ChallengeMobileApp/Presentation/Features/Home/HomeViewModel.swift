@@ -79,7 +79,6 @@ final class HomeViewModel: ObservableObject {
     }
     
     func getSurveys() {
-        print("list \(SurveyStorage.shared.getSurveyList())")
         if SurveyStorage.shared.getSurveyList().isEmpty {
             self.isLoading = true
             Task {
@@ -103,7 +102,6 @@ final class HomeViewModel: ObservableObject {
                     }, receiveValue: { [weak self] surveys in
                         self?.surveys = surveys
                         SurveyStorage.shared.saveSurveyList(list: surveys)
-                        print("list \(SurveyStorage.shared.getSurveyList())")
                     })
                     .store(in: &cancellable)
             }

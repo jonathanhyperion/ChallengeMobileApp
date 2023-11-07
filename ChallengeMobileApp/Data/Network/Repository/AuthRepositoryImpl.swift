@@ -17,7 +17,15 @@ struct AuthRepositoryImpl: AuthRepository {
     
     func login(params: LoginRequest) -> AnyPublisher<AccessToken, Error> {
         api.requestPublisher(.login(params: params))
-            .map(\.data)
+            .tryMap { result in
+                if let response = result.response,
+                   !(200 ... 299).contains(response.statusCode)
+                {
+                    let info = try JSONDecoder().decode(NetworkErrors.self, from: result.data)
+                    throw self.httpError(response.statusCode, info)
+                }
+                return result.data
+            }
             .decode(type: LoginResponse.self, decoder: JSONDecoder())
             .tryMap { response in
                 
@@ -87,5 +95,18 @@ struct AuthRepositoryImpl: AuthRepository {
                 return response.meta?.message ?? ""
             }
             .eraseToAnyPublisher()
+    }
+    
+    private func httpError(_ statusCode: Int, _ response: NetworkErrors?) -> NetworkRequestError {
+        switch statusCode {
+        case 400: return .badRequest(response)
+        case 401: return .unauthorized(response)
+        case 403: return .forbidden(response)
+        case 404: return .notFound(response)
+        case 402, 405 ... 499: return .error4xx(statusCode)
+        case 500: return .serverError(response)
+        case 501 ... 599: return .error5xx(statusCode)
+        default: return .unknownError(response)
+        }
     }
 }

@@ -9,6 +9,7 @@ struct LoginView: View {
     @StateObject var viewModel: LoginViewModel = .make()
     
     @State private var keyboardHeight: CGFloat = 0.0
+    @State var isAnimating: Bool = false
     
     let pushHome: () -> Void
     let pushForgotPassword: () -> Void
@@ -31,6 +32,16 @@ struct LoginView: View {
                         Spacer ()
                         
                         VStack(spacing: 28.0) {
+                            
+                            if viewModel.errorLogin {
+                                withAnimation {
+                                    Text(L10n.errorLogin)
+                                        .font(.custom(FontFamily.Neuzeit.book, fixedSize: 17.0))
+                                        .foregroundColor(.red)
+                                        .padding(.horizontal, 16.0)
+                                        .multilineTextAlignment(.center)
+                                }
+                            }
                             
                             CustomTextField(
                                 text: $viewModel.email,
@@ -67,17 +78,36 @@ struct LoginView: View {
                                     viewModel.login()
                                 }
                             ) {
-                                VStack(alignment: .center) {
-                                    Text(L10n.login)
-                                        .font(.custom(FontFamily.Neuzeit.heavy, fixedSize: 17.0))
-                                        .foregroundColor(.black)
+                                
+                            VStack(alignment: .center) {
+                                ZStack {
+                                    if viewModel.isLoading {
+                                        Asset.loadingIcon.swiftUIImage
+                                            .renderingMode(.template)
+                                            .resizable()
+                                            .foregroundColor(.gray.opacity(0.3))
+                                            .frame(
+                                                width: 20,
+                                                height: 20
+                                            )
+                                            .rotationEffect(Angle(degrees: isAnimating ? 360.0 : 0.0))
+                                            .animation(.linear(duration: 1.0).repeatForever(autoreverses: false), value: isAnimating)
+                                            .onAppear {
+                                                self.isAnimating = true
+                                            }
+                                    } else {
+                                        Text(L10n.login)
+                                            .font(.custom(FontFamily.Neuzeit.heavy, fixedSize: 17.0))
+                                            .foregroundColor(.black)
+                                    }
                                 }
-                                .frame(
-                                    width: reader.size.width * 0.90,
-                                    height: 56.0
-                                )
-                                .background(.white)
-                                .cornerRadius(10.0)
+                            }
+                            .frame(
+                                width: reader.size.width * 0.90,
+                                height: 56.0
+                            )
+                            .background(.white)
+                            .cornerRadius(10.0)
                             }
                         }
                         
