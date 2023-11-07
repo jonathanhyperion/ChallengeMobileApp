@@ -1,6 +1,0 @@
-framework module Pods_ChallengeMobileApp {
-  umbrella header "Pods-ChallengeMobileApp-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module Moya {
-  umbrella header "Moya.default-Combine-ReactiveSwift-RxSwift-umbrella.h"
-
-  export *
-  module * { export * }
-}
