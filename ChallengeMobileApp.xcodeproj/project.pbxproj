@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		357B7832C8701F84D521BCD4 /* Pods_ChallengeMobileAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31CAA4E861D6B0C30FC4FD09 /* Pods_ChallengeMobileAppTests.framework */; };
+		AE07F1082AF9F27600A2A431 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE07F1072AF9F27600A2A431 /* LaunchScreen.storyboard */; };
 		AE276E812AF9521400A12EA5 /* RepositoryAssambly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE276E7D2AF9521400A12EA5 /* RepositoryAssambly.swift */; };
 		AE276E822AF9521400A12EA5 /* Injector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE276E7E2AF9521400A12EA5 /* Injector.swift */; };
 		AE276E832AF9521400A12EA5 /* ServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE276E7F2AF9521400A12EA5 /* ServiceAssembly.swift */; };
@@ -98,6 +99,7 @@
 		4D72FB1B762C28ED2B06CAF5 /* Pods-ChallengeMobileAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileAppTests.release.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileAppTests/Pods-ChallengeMobileAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		6C128424013A735BC596BD25 /* Pods-ChallengeMobileAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChallengeMobileAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ChallengeMobileAppTests/Pods-ChallengeMobileAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7DECD180C692692A35B65F30 /* Pods_ChallengeMobileApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChallengeMobileApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE07F1072AF9F27600A2A431 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AE276E7D2AF9521400A12EA5 /* RepositoryAssambly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RepositoryAssambly.swift; path = ChallengeMobileApp/Dependencies/RepositoryAssambly.swift; sourceTree = SOURCE_ROOT; };
 		AE276E7E2AF9521400A12EA5 /* Injector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Injector.swift; path = ChallengeMobileApp/Dependencies/Injector.swift; sourceTree = SOURCE_ROOT; };
 		AE276E7F2AF9521400A12EA5 /* ServiceAssembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ServiceAssembly.swift; path = ChallengeMobileApp/Dependencies/ServiceAssembly.swift; sourceTree = SOURCE_ROOT; };
@@ -588,6 +590,7 @@
 				AEC599242AF47ED70099DDE9 /* Presentation */,
 				AEC5991E2AF47E070099DDE9 /* App */,
 				AEF7003E2AF45614003BDFCB /* Preview Content */,
+				AE07F1072AF9F27600A2A431 /* LaunchScreen.storyboard */,
 			);
 			path = ChallengeMobileApp;
 			sourceTree = SOURCE_ROOT;
@@ -698,6 +701,7 @@
 				AE4CD6102AF4A5C2001246BF /* NeuzeitSLTStdBookHeavy.otf in Resources */,
 				AE4CD60E2AF4A562001246BF /* NeuzeitSLTStdBook.otf in Resources */,
 				AE4CD6192AF4ACEE001246BF /* Localizable.strings in Resources */,
+				AE07F1082AF9F27600A2A431 /* LaunchScreen.storyboard in Resources */,
 				AEF7003D2AF45614003BDFCB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1025,7 +1029,7 @@
 				INFOPLIST_FILE = ChallengeMobileApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1056,7 +1060,7 @@
 				INFOPLIST_FILE = ChallengeMobileApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
